@@ -10,7 +10,7 @@
         "Is anyone there?"
       ],
       "responses": [
-        "Hello! Welcome to James Cook University Orientation.",
+        "Hello! Welcome to James Cook University Orientation Bot.",
         "Hi there! How can I assist you with orientation details?",
         "Hey! Looking for orientation info? I'm here to help!"
       ]
@@ -33,7 +33,7 @@
       ],
       "responses": [
         "Orientation at JCU is packed with essential information and fun activities to help you get familiar with the campus, meet new friends, and learn about student support services.",
-        "Your attendance at orientation is important to start your university journey smoothly!"
+        "Orientation week is designed to help new students get familiar with campus, meet peers, and learn about available support services. Your attendance at orientation is important to start your university journey smoothly!"
       ]
     },
     {
