@@ -1,0 +1,112 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hello! Welcome to James Cook University Orientation.",
+        "Hi there! How can I assist you with orientation details?",
+        "Hey! Looking for orientation info? I'm here to help!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later! Have a great time at JCU!",
+        "Goodbye! Don’t forget to check out your orientation schedule.",
+        "Bye! Reach out anytime if you need more information."
+      ]
+    },
+    {
+      "tag": "orientation_general",
+      "patterns": [
+        "What is orientation?",
+        "What happens at orientation?",
+        "Why should I attend orientation?"
+      ],
+      "responses": [
+        "Orientation at JCU is packed with essential information and fun activities to help you get familiar with the campus, meet new friends, and learn about student support services.",
+        "Your attendance at orientation is important to start your university journey smoothly!"
+      ]
+    },
+    {
+      "tag": "welcome_speech",
+      "patterns": [
+        "When is the welcome speech?",
+        "Who will give the welcome speech?",
+        "What happens in the welcome speech?"
+      ],
+      "responses": [
+        "The welcome speech for part-time students is on 16 January 2025, from 07:00 PM to 07:25 PM at Block C. It will be delivered by the Deputy Vice-Chancellor and Acting Campus Dean.",
+        "For full-time students, the welcome speech is on 16 January 2025, from 09:00 AM to 09:10 AM at Block C."
+      ]
+    },
+    {
+      "tag": "academic_briefing",
+      "patterns": [
+        "When is the academic briefing?",
+        "What is academic advising?",
+        "Who will conduct the academic briefing?"
+      ],
+      "responses": [
+        "For part-time students, academic advising takes place on 16 January 2025, from 07:25 PM to 08:30 PM. It will be conducted by Associate Professors and Academic Heads based on your course.",
+        "For full-time students, academic advising is on 16 January 2025, from 10:40 AM to 11:40 AM in breakout rooms."
+      ]
+    },
+    {
+      "tag": "digilearn",
+      "patterns": [
+        "What is DigiLearn?",
+        "How do I access DigiLearn?",
+        "What do I need for DigiLearn?"
+      ],
+      "responses": [
+        "DigiLearn is JCU's virtual learning environment. You must complete JCU GetStarted before attending the DigiLearn Workshops.",
+        "Make sure to use a laptop or personal computer for DigiLearn workshops. Mobile phones and iPads are not recommended."
+      ]
+    },
+    {
+      "tag": "student_pass",
+      "patterns": [
+        "What are student pass formalities?",
+        "What documents do I need for my student pass?",
+        "Where do I go for my student pass appointment?"
+      ],
+      "responses": [
+        "International students need to complete Student's Pass formalities. Arrive in Singapore at least two weeks before classes start to avoid delays.",
+        "The required documents for the Student’s Pass include your passport and IPA letter. The formalities take place at Block C on 6-7 January 2025 from 09:00 AM to 03:00 PM."
+      ]
+    },
+    {
+      "tag": "explore_booths",
+      "patterns": [
+        "What booths are available at orientation?",
+        "Can I meet staff at orientation?",
+        "What kind of support services are at JCU?"
+      ],
+      "responses": [
+        "You can visit booths to learn about academic support, career development, student well-being, and campus life. JCU partners for accommodation and telecommunication services will also be there!",
+        "Meet JCU staff and explore available support services during orientation. Don’t forget to grab your welcome bag and JCU T-shirt!"
+      ]
+    },
+    {
+      "tag": "campus_exploration",
+      "patterns": [
+        "How can I explore the campus?",
+        "When is the campus tour?",
+        "Where do I register for campus exploration?"
+      ],
+      "responses": [
+        "Campus exploration is on 14 January 2025 from 02:00 PM to 05:30 PM. Register by 3 January 2025 to join.",
+        "The event includes campus exploration and fun activities. Register through the official JCU link sent to your email."
+      ]
+    }
+  ]
+}
