@@ -40,7 +40,7 @@
       ]
     },
     {
-      "tag": "orientation_general",
+      "tag": "orientation_purpose",
       "patterns": [
         "What is orientation?",
         "What happens at orientation?",
@@ -50,6 +50,25 @@
         "Orientation at JCU is packed with essential information and fun activities to help you get familiar with the campus, meet new friends, and learn about student support services.",
         "Orientation week is designed to help new students get familiar with campus, meet peers, and learn about available support services. Your attendance at orientation is important to start your university journey smoothly!"
       ]
+    },
+    {
+      "tag": "orientation_time",
+      "patterns": [
+        "When is orientation week?",
+        "What are the dates for orientation week?",
+        "When does orientation week begin?"
+      ],
+      "responses": [
+        "Orientation week will take place from Monday, 06 January to Friday, 17 January 2025.",
+        "Orientation week begins on Monday, 06 January 2025."
+      ]
+    },
+    {
+      "tag": "JCU_101",
+      "patterns":
+        "What is JCU 101?",
+      "responses":
+        "JCU 101 is an introduction session that walks students through the essentials of studying at JCU, including academic expectations, student support, and campus life."
     },
     {
       "tag": "welcome_speech",
