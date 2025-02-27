@@ -17,11 +17,26 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
       "responses": [
         "See you later! Have a great time at JCU!",
         "Goodbye! Don’t forget to check out your orientation schedule.",
         "Bye! Reach out anytime if you need more information."
+      ]
+    },
+    {
+      "tag": "condition",
+      "patterns": [
+        "How are you?",
+        "What are you doing?"
+      ],
+      "responses": [
+        "I am doing well and here to help you! :)",
+        "Good as always and ready to answer on all your questions!"
       ]
     },
     {
