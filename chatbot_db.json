@@ -7,6 +7,10 @@
         "Hey",
         "Hello",
         "Good day",
+        "Good evening",
+        "Good night",
+        "Good afternoon",
+        "Good morning",
         "Is anyone there?"
       ],
       "responses": [
@@ -64,11 +68,14 @@
       ]
     },
     {
+      "tag": "part-time_vs_full-time",
+      "patterns": ["What is the difference between the part-time and full-time orientation schedules?"],
+      "responses": ["The part-time schedule is tailored for programs such as the Part-Time Diploma, Bachelor, and Master courses (for example, in Psychological Science, Guidance and Counselling, and Business). In contrast, the full-time schedule covers a broader range of programs, including those offered by the Schools of Business, Social Health and Sciences, Science and Technology, as well as English Language and Pre-University Foundation Programs, and even Study Abroad."]
+    },
+    {
       "tag": "JCU_101",
-      "patterns":
-        "What is JCU 101?",
-      "responses":
-        "JCU 101 is an introduction session that walks students through the essentials of studying at JCU, including academic expectations, student support, and campus life."
+      "patterns": ["What is JCU 101?"],
+      "responses": ["JCU 101 is an introduction session that walks students through the essentials of studying at JCU, including academic expectations, student support, and campus life."]
     },
     {
       "tag": "welcome_speech",
