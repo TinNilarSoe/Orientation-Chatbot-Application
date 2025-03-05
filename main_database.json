@@ -1,0 +1,120 @@
+{
+  "_comment": "This file contains chatbot common intents and responses. Do not modify unless necessary.",
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day",
+        "Good evening",
+        "Good night",
+        "Good afternoon",
+        "Good morning",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hello! Welcome to James Cook University Orientation Bot.",
+        "Hi there! How can I assist you with orientation details?",
+        "Hey! Looking for orientation info? I'm here to help!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "See ya",
+        "Bye bye",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later! Have a great time at James Cook University!",
+        "Goodbye! Don’t forget to check out your orientation schedule.",
+        "Bye! Reach out anytime if you need more information."
+      ]
+    },
+    {
+      "tag": "condition",
+      "patterns": [
+        "How are you?",
+        "What are you doing?"
+      ],
+      "responses": [
+        "I am doing well and here to help you! :)",
+        "Good as always and ready to answer all your questions!"
+      ]
+    },
+    {
+      "tag": "orientation_purpose",
+      "patterns": [
+        "What is orientation?",
+        "What happens at orientation?",
+        "Why should I attend orientation?"
+      ],
+      "responses": [
+        "Orientation at JCU is packed with essential information and fun activities to help you get familiar with the campus, meet new friends, and learn about student support services.",
+        "Orientation week is designed to help new students get familiar with campus, meet peers, and learn about available support services. Your attendance at orientation is important to start your university journey smoothly!"
+      ]
+    },
+    {
+      "tag": "orientation_time",
+      "patterns": [
+        "When is orientation week?",
+        "What are the dates for orientation week?",
+        "When does orientation week begin?"
+      ],
+      "responses": [
+        "Orientation week will take place from Monday, 06 January to Friday, 17 January 2025.",
+        "Orientation week begins on Monday, 06 January 2025."
+      ]
+    },
+    {
+      "tag": "part-time_vs_full-time",
+      "patterns": [
+        "What is the difference between the part-time and full-time orientation schedules?",
+        "difference between part-time and full-time",
+        "Is there any difference between part-time and full-time?"
+      ],
+      "responses": [
+        "The part-time schedule is tailored for programs such as the Part-Time Diploma, Bachelor, and Master courses (for example, in Psychological Science, Guidance and Counselling, and Business). In contrast, the full-time schedule covers a broader range of programs, including those offered by the Schools of Business, Social Health and Sciences, Science and Technology, as well as English Language and Pre-University Foundation Programs, and even Study Abroad."
+      ]
+    },
+    {
+      "tag": "jcu_101",
+      "patterns": [
+        "jcu 101",
+        "What is JCU 101?",
+        "Why is JCU 101 significant?"
+      ],
+      "responses": [
+        "JCU 101 is an introduction session that walks students through the essentials of studying at JCU, including academic expectations, student support, and campus life."
+      ]
+    },
+    {
+      "tag": "maps_location",
+      "patterns": [
+        "Where is JCU located?",
+        "What is the address of James Cook University?",
+        "Can you give me directions to JCU?",
+        "How do I get to James Cook University?",
+        "Where can I find JCU on the map?"
+      ],
+      "responses": [
+        "James Cook University Singapore is located at 149 Sims Drive, Singapore 387380. You can find it on Google Maps here: https://goo.gl/maps/5HVrYhdd5qJ2"
+      ]
+    },
+    {
+      "tag": "digilearn",
+      "patterns": [
+        "What is DigiLearn?",
+        "How do I access DigiLearn?",
+        "What do I need for DigiLearn?"
+      ],
+      "responses": [
+        "DigiLearn is James Cook University's virtual learning environment. You must complete JCU GetStarted before attending the DigiLearn Workshops. Make sure to use a laptop or personal computer for DigiLearn workshops. Mobile phones and iPads are not recommended."
+      ]
+    }
+  ]
+}

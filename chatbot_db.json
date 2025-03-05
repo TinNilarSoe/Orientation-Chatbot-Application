@@ -24,6 +24,8 @@
       "patterns": [
         "Bye",
         "See you later",
+        "See ya",
+        "Bye bye",
         "Goodbye"
       ],
       "responses": [
@@ -69,13 +71,25 @@
     },
     {
       "tag": "part-time_vs_full-time",
-      "patterns": ["What is the difference between the part-time and full-time orientation schedules?"],
-      "responses": ["The part-time schedule is tailored for programs such as the Part-Time Diploma, Bachelor, and Master courses (for example, in Psychological Science, Guidance and Counselling, and Business). In contrast, the full-time schedule covers a broader range of programs, including those offered by the Schools of Business, Social Health and Sciences, Science and Technology, as well as English Language and Pre-University Foundation Programs, and even Study Abroad."]
+      "patterns": [
+        "What is the difference between the part-time and full-time orientation schedules?",
+        "difference between part-time and full-time",
+        "Is there any difference between part-tim and full-time?"
+      ],
+      "responses": [
+        "The part-time schedule is tailored for programs such as the Part-Time Diploma, Bachelor, and Master courses (for example, in Psychological Science, Guidance and Counselling, and Business). In contrast, the full-time schedule covers a broader range of programs, including those offered by the Schools of Business, Social Health and Sciences, Science and Technology, as well as English Language and Pre-University Foundation Programs, and even Study Abroad."
+      ]
     },
     {
       "tag": "JCU_101",
-      "patterns": ["What is JCU 101?"],
-      "responses": ["JCU 101 is an introduction session that walks students through the essentials of studying at JCU, including academic expectations, student support, and campus life."]
+      "patterns": [
+        "jcu 101",
+        "What is JCU 101?",
+        "Why is JCU 101 significant?"
+      ],
+      "responses": [
+        "JCU 101 is an introduction session that walks students through the essentials of studying at JCU, including academic expectations, student support, and campus life."
+      ]
     },
     {
       "tag": "welcome_speech",
@@ -85,8 +99,18 @@
         "What happens in the welcome speech?"
       ],
       "responses": [
-        "The welcome speech for part-time students is on 16 January 2025, from 07:00 PM to 07:25 PM at Block C. It will be delivered by the Deputy Vice-Chancellor and Acting Campus Dean.",
-        "For full-time students, the welcome speech is on 16 January 2025, from 09:00 AM to 09:10 AM at Block C."
+        "The welcome speech is on 16 January 2025, at Block C. It will be delivered by the Deputy Vice-Chancellor and Acting Campus Dean. However the time and course information "
+      ]
+    },
+    {
+      "tag": "welcome_speech",
+      "patterns": [
+        "When is the welcome speech?",
+        "Who will give the welcome speech?",
+        "What happens in the welcome speech?"
+      ],
+      "responses": [
+        "The welcome speech is on 16 January 2025, at Block C. It will be delivered by the Deputy Vice-Chancellor and Acting Campus Dean."
       ]
     },
     {
