@@ -1,73 +1,191 @@
 {
-  "_comment": "This file contains responses only for full-time program. Can be modified for further changes.",
   "medical_checkup": {
-      "tags": ["medical", "student pass", "documents"],
-      "responses": [
-        {
-          "title": "Medical Check-Up & Student’s Pass Formalities",
-          "eligibility": "For International Students only",
-          "details": "Students are highly encouraged to arrive in Singapore at least two weeks before the start of classes to ensure the completion of student’s pass formalities. If you have already completed your medical check-up in your home country, you are not required to undergo another medical check-up in Singapore.",
-          "email": "stpformalities-singapore@jcu.edu.au",
-          "date": "06 January 2025",
-          "time": "09:00 AM to 03:00 PM (Last registration at 02:00 PM)",
-          "venue": "Block C",
-          "compulsory_documents": ["Passport", "IPA Letter"]
-        }
-      ]
-    },
-//  "intents": [
-//    {
-//      "tag": "medical_checkup",
-//      "patterns": [
-//        "What is the medical check-up for?",
-//        "When is the medical check-up?",
-//        "What documents do I need for the Student’s Pass?",
-//        "Where do I go for the medical check-up?",
-//        "Do I need a medical check-up if I already did one in my home country?"
-//      ],
-//      "responses": [
-//        "**Medical Check-Up & Student’s Pass Formalities**\n",
-//        "*(For International Students only)*\n\n",
-//        "**Students are highly encouraged to arrive in Singapore at least two weeks before the start of classes** to complete their Student’s Pass formalities and avoid delays in attending classes.\n",
-//        "If you have already completed your medical check-up in your home country, you do **not** need to undergo another one in Singapore. \n",
-//        "To prevent delays in your **Student’s Pass issuance**, please send your **overseas medical check-up report** to **stpformalities_singapore@jcu.edu.au**.\n",
-//        "Please be **punctual** for your appointment.\n\n",
-//        "**Date:** 06 January 2025\n",
-//        "**Time:** 07 January 2025, 09:00 AM – 03:00 PM *(Last registration at 02:00 PM)*\n",
-//        "**Venue:** Block C, James Cook University Singapore\n\n",
-//        "**Compulsory Documents to Bring:**\n",
-//        "Passport\n",
-//        "IPA Letter\n\n",
-//        "For any additional questions, feel free to reach out to the university!"
-//      ]
-//    },
-//    {
-//      "tag": "student_pass_formalities",
-//      "patterns": [
-//        "What is the Student’s Pass formalities process?",
-//        "When should I complete my Student’s Pass formalities?",
-//        "What happens if I arrive late for Student’s Pass processing?",
-//        "How do I know my Student’s Pass appointment date?",
-//        "Who do I contact for Student’s Pass formalities?"
-//      ],
-//      "responses": [
-//        "**Student’s Pass Completion of Formalities (COMPULSORY)**\n",
-//        "*(For International Students only)*\n\n",
-//        "**Students are strongly advised** to arrive in Singapore at least **two weeks before the course start date** to complete their Student’s Pass formalities on time.\n",
-//        "If you **arrive later** than the recommended time, you **may not be able to join your classes on time** as Student’s Pass processing appointments depend on ICA's availability.\n",
-//        "You will receive an **email from STP Formalities** (*stpformalities-singapore@jcu.edu.au*) with details about your **Student’s Pass collection appointment**.\n\n",
-//        "For any concerns, feel free to contact STP Formalities via email!"
-//      ]
-//    },
-//    {
-//      "tag": "welcome-speech_jcu-101",
-//      "patterns": [
-//        ""
-//      ],
-//      "responses": [
-//
-//      ]
-//    }
-//  ]
-//}
+    "tags": [
+      "medical",
+      "student pass",
+      "document check",
+      "international students"
+    ],
+    "responses": [
+      {
+        "title": "Medical Check-Up & Student’s Pass Formalities",
+        "eligibility": "International Students only",
+        "description": "Arrive at least two weeks before classes begin to complete your Student’s Pass formalities and avoid delays. If you've already completed a medical check-up in your home country, you're not required to undergo another in Singapore.",
+        "important_note": "Send your overseas medical report to stpformalities-singapore@jcu.edu.au before arrival.",
+        "details": "Students are highly encouraged to arrive in Singapore at least two weeks before the start of classes to ensure the completion of student’s pass formalities. If you have already completed your medical check-up in your home country, you are not required to undergo another medical check-up in Singapore.",
+        "contact_email": "stpformalities-singapore@jcu.edu.au",
+        "date": [
+          "06 January 2025",
+          "07 January 2025"
+        ],
+        "time": "09:00 AM to 03:00 PM (Last registration at 02:00 PM)",
+        "venue": "Block C",
+        "compulsory_documents": [
+          "Passport",
+          "IPA Letter"
+        ]
+      }
+    ]
+  },
+  "welcome_speech": {
+    "tags": [
+      "welcome",
+      "speech",
+      "JCU 101"
+    ],
+    "responses": [
+      {
+        "title": "Welcome Speech and JCU 101",
+        "audience": "All Students",
+        "description": "Kick off your academic journey with key university insights.",
+        "date": "16 January 2025",
+        "time": "09:00 AM – 09:10 AM",
+        "speakers": [
+          "Deputy Vice-Chancellor, Singapore",
+          "Acting Campus Dean & Head of Learning, Teaching and Student Engagement"
+        ],
+        "venue": "Block C",
+        "dress_code": "Smart Casual (No shorts or slippers)"
+      }
+    ]
+  },
+  "digilearn_advising_workshop": {
+    "tags": [
+      "digilearn workshop",
+      "academic advising",
+      "workshop"
+    ],
+    "responses": [
+      {
+        "title": "DigiLearn Workshop & Academic Advising",
+        "audience": "All Students",
+        "date": "16 January 2025",
+        "time": "09:10 AM to 10:25 AM",
+        "venue": "Block C",
+        "equipment_required": "Laptop or personal computer (no phones or tablets)",
+        "lunch_provided": true,
+        "itinerary": [
+          "LearnJCU – Getting Started",
+          "Breakout rooms for Academic Advising"
+        ]
+      }
+    ]
+  },
+  "academic_advising": {
+    "tags": [
+      "advising",
+      "breakout sessions",
+      "course specific"
+    ],
+    "responses": [
+      {
+        "title": "Academic Advising Breakout Rooms",
+        "date": "16 January 2025",
+        "time": "10:40 AM – 11:40 AM",
+        "advising_sessions": [
+          "Diploma and Bachelor of Business Programs",
+          "Postgraduate Business and PQP – Business Programs",
+          "Bachelor of Environmental Science Programs",
+          "Diploma and Bachelor of Arts and Psychological Science Programs",
+          "Master of Psychological Science and Postgraduate Psychology Programs",
+          "Diploma, Bachelor, and Master of IT and Science Programs",
+          "Pre-University Foundation Programs",
+          "Introduction to ELPP"
+        ]
+      }
+    ]
+  },
+  "explore_booths": {
+    "tags": [
+      "booths",
+      "support",
+      "life on campus"
+    ],
+    "responses": [
+      {
+        "title": "Explore Booths",
+        "audience": "All Students",
+        "date": "16 January 2025",
+        "time": "01:30 PM – 03:00 PM",
+        "venue": "Block E",
+        "description": "Chat with JCU departments and partners about academic support, accommodation, telecommunications, and career development.",
+        "bonus_items": [
+          "Welcome Bags",
+          "JCU T-shirts (available from 07 January – 20 February 2025)"
+        ]
+      }
+    ]
+  },
+  "networking_event": {
+    "tags": [
+      "network",
+      "lecturers",
+      "peers",
+      "community"
+    ],
+    "responses": [
+      {
+        "title": "Network with Lecturers and Peers",
+        "audience": "All Students",
+        "date": "16 January 2025",
+        "time": "03:00 PM – 05:00 PM",
+        "venue": "Multi-Purpose Hall",
+        "description": "Build connections with faculty and peers to enhance your JCU experience.",
+        "refreshments": "Afternoon tea will be provided.",
+        "note": "Parent’s Lounge will be open; limited parking available on campus."
+      }
+    ]
+  },
+  "student_pass_completion": {
+    "tags": [
+      "student pass",
+      "final step",
+      "visa"
+    ],
+    "responses": [
+      {
+        "title": "Student’s Pass Completion of Formalities",
+        "eligibility": "International Students Only",
+        "description": "You must arrive in Singapore two weeks before class starts to secure your Student’s Pass. Late arrivals may face delays based on ICA availability.",
+        "email": "stpformalities-singapore@jcu.edu.au",
+        "note": "Appointment details will be sent to your email."
+      }
+    ]
+  },
+  "campus_exploration": {
+    "tags": [
+      "exploration",
+      "campus tour",
+      "fun activities"
+    ],
+    "responses": [
+      {
+        "title": "Campus & Singapore Exploration",
+        "date": "14 January 2025",
+        "time": [
+          "02:00 PM to 03:00 PM",
+          "03:00 PM to 05:30 PM"
+        ],
+        "check_in_time": "Report by 01:30 PM",
+        "venue": [
+          "James Cook University",
+          "The Shoppes, Marina Bay Sands"
+        ],
+        "activities": [
+          "Campus Exploration",
+          "Fun Activities"
+        ],
+        "registration": {
+          "deadline": "03 January 2025",
+          "notes": [
+            "Fill the indemnity form on the day of the event.",
+            "New Student T-shirts will be given before activity."
+          ]
+        },
+        "email_notification": true
+      }
+    ]
+  }
+}
+
 
