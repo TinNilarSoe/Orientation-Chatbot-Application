@@ -1,48 +1,73 @@
 {
   "_comment": "This file contains responses only for full-time program. Can be modified for further changes.",
-  "intents": [
-    {
-      "tag": "medical_checkup",
-      "patterns": [
-        "What is the medical check-up for?",
-        "When is the medical check-up?",
-        "What documents do I need for the Student’s Pass?",
-        "Where do I go for the medical check-up?",
-        "Do I need a medical check-up if I already did one in my home country?"
-      ],
+  "medical_checkup": {
+      "tags": ["medical", "student pass", "documents"],
       "responses": [
-        "**Medical Check-Up & Student’s Pass Formalities**\n",
-        "*(For International Students only)*\n\n",
-        "**Students are highly encouraged to arrive in Singapore at least two weeks before the start of classes** to complete their Student’s Pass formalities and avoid delays in attending classes.\n",
-        "If you have already completed your medical check-up in your home country, you do **not** need to undergo another one in Singapore. \n",
-        "To prevent delays in your **Student’s Pass issuance**, please send your **overseas medical check-up report** to **stpformalities_singapore@jcu.edu.au**.\n",
-        "Please be **punctual** for your appointment.\n\n",
-        "**Date:** 06 January 2025\n",
-        "**Time:** 07 January 2025, 09:00 AM – 03:00 PM *(Last registration at 02:00 PM)*\n",
-        "**Venue:** Block C, James Cook University Singapore\n\n",
-        "**Compulsory Documents to Bring:**\n",
-        "Passport\n",
-        "IPA Letter\n\n",
-        "For any additional questions, feel free to reach out to the university!"
+        {
+          "title": "Medical Check-Up & Student’s Pass Formalities",
+          "eligibility": "For International Students only",
+          "details": "Students are highly encouraged to arrive in Singapore at least two weeks before the start of classes to ensure the completion of student’s pass formalities. If you have already completed your medical check-up in your home country, you are not required to undergo another medical check-up in Singapore.",
+          "email": "stpformalities-singapore@jcu.edu.au",
+          "date": "06 January 2025",
+          "time": "09:00 AM to 03:00 PM (Last registration at 02:00 PM)",
+          "venue": "Block C",
+          "compulsory_documents": ["Passport", "IPA Letter"]
+        }
       ]
     },
-    {
-      "tag": "student_pass_formalities",
-      "patterns": [
-        "What is the Student’s Pass formalities process?",
-        "When should I complete my Student’s Pass formalities?",
-        "What happens if I arrive late for Student’s Pass processing?",
-        "How do I know my Student’s Pass appointment date?",
-        "Who do I contact for Student’s Pass formalities?"
-      ],
-      "responses": [
-        "**Student’s Pass Completion of Formalities (COMPULSORY)**\n",
-        "*(For International Students only)*\n\n",
-        "**Students are strongly advised** to arrive in Singapore at least **two weeks before the course start date** to complete their Student’s Pass formalities on time.\n",
-        "If you **arrive later** than the recommended time, you **may not be able to join your classes on time** as Student’s Pass processing appointments depend on ICA's availability.\n",
-        "You will receive an **email from STP Formalities** (*stpformalities-singapore@jcu.edu.au*) with details about your **Student’s Pass collection appointment**.\n\n",
-        "For any concerns, feel free to contact STP Formalities via email!"
-      ]
-    }
-  ]
-}
+//  "intents": [
+//    {
+//      "tag": "medical_checkup",
+//      "patterns": [
+//        "What is the medical check-up for?",
+//        "When is the medical check-up?",
+//        "What documents do I need for the Student’s Pass?",
+//        "Where do I go for the medical check-up?",
+//        "Do I need a medical check-up if I already did one in my home country?"
+//      ],
+//      "responses": [
+//        "**Medical Check-Up & Student’s Pass Formalities**\n",
+//        "*(For International Students only)*\n\n",
+//        "**Students are highly encouraged to arrive in Singapore at least two weeks before the start of classes** to complete their Student’s Pass formalities and avoid delays in attending classes.\n",
+//        "If you have already completed your medical check-up in your home country, you do **not** need to undergo another one in Singapore. \n",
+//        "To prevent delays in your **Student’s Pass issuance**, please send your **overseas medical check-up report** to **stpformalities_singapore@jcu.edu.au**.\n",
+//        "Please be **punctual** for your appointment.\n\n",
+//        "**Date:** 06 January 2025\n",
+//        "**Time:** 07 January 2025, 09:00 AM – 03:00 PM *(Last registration at 02:00 PM)*\n",
+//        "**Venue:** Block C, James Cook University Singapore\n\n",
+//        "**Compulsory Documents to Bring:**\n",
+//        "Passport\n",
+//        "IPA Letter\n\n",
+//        "For any additional questions, feel free to reach out to the university!"
+//      ]
+//    },
+//    {
+//      "tag": "student_pass_formalities",
+//      "patterns": [
+//        "What is the Student’s Pass formalities process?",
+//        "When should I complete my Student’s Pass formalities?",
+//        "What happens if I arrive late for Student’s Pass processing?",
+//        "How do I know my Student’s Pass appointment date?",
+//        "Who do I contact for Student’s Pass formalities?"
+//      ],
+//      "responses": [
+//        "**Student’s Pass Completion of Formalities (COMPULSORY)**\n",
+//        "*(For International Students only)*\n\n",
+//        "**Students are strongly advised** to arrive in Singapore at least **two weeks before the course start date** to complete their Student’s Pass formalities on time.\n",
+//        "If you **arrive later** than the recommended time, you **may not be able to join your classes on time** as Student’s Pass processing appointments depend on ICA's availability.\n",
+//        "You will receive an **email from STP Formalities** (*stpformalities-singapore@jcu.edu.au*) with details about your **Student’s Pass collection appointment**.\n\n",
+//        "For any concerns, feel free to contact STP Formalities via email!"
+//      ]
+//    },
+//    {
+//      "tag": "welcome-speech_jcu-101",
+//      "patterns": [
+//        ""
+//      ],
+//      "responses": [
+//
+//      ]
+//    }
+//  ]
+//}
+
