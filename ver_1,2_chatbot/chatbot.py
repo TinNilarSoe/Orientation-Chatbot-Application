@@ -3,6 +3,13 @@ import random
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from googletrans import Translator
+
+translator = Translator()
+
+
+switch_keywords = ["switch to full-time", "switch to part-time", "change to full-time", "change to part-time",
+                   "i'm a full-time student now", "i'm part-time now"]
 
 
 # Load JSON databases
@@ -55,6 +62,16 @@ def find_best_match(user_input):
     else:
         return None
 
+def translate_to_english(text):
+    try:
+        detected = translator.detect(text).lang
+        if detected != 'en':
+            translated = translator.translate(text, src=detected, dest='en')
+            return translated.text.lower()
+        return text.lower()
+    except Exception as e:
+        print("Translation error:", e)
+        return text.lower()
 
 # Function to get response from the appropriate database
 def get_response(tag, selected_db):
@@ -82,7 +99,18 @@ def chatbot():
 
     # Chat loop
     while True:
-        user_input = input("You: ").strip().lower()
+        original_input = input("You: ").strip()
+        user_input = translate_to_english(original_input)
+
+        # Check if user wants to switch student type
+        if any(keyword in user_input for keyword in switch_keywords):
+            if "full-time" in user_input:
+                selected_db = full_time_db
+                print("Got it! You've switched to Full-time student mode. How can I help you now?")
+            elif "part-time" in user_input:
+                selected_db = part_time_db
+                print("Got it! You've switched to Part-time student mode. How can I help you now?")
+            continue
 
         if user_input in ["exit", "quit", "bye"]:
             print("Goodbye! Have a great day.")
