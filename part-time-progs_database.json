@@ -1,52 +1,66 @@
 {
-  "_comment": "This file contains responses only for part-time program. Can be modified for further changes.",
   "intents": [
     {
-      "tag": "welcome_speech",
+      "tag": "welcome_speech_time",
       "patterns": [
-        "When is the welcome speech?",
-        "Who will give the welcome speech?",
-        "What happens in the welcome speech?",
-        "Where is the welcome speech held?",
-        "What time is the welcome speech?"
+        "When is the welcome speech?"
       ],
       "responses": [
-        "The Welcome Speech and Academic Briefing will be held on **16 January 2025**, from **07:00 PM to 08:30 PM** at **Block C, James Cook University Singapore**. \n\n",
-        "**Welcome Speech Schedule:**\n",
-        "07:00 PM – 07:10 PM: Welcome Speech by Deputy Vice-Chancellor, Singapore\n",
-        "07:10 PM – 07:20 PM: Welcome Speech by Acting Campus Dean & Head of Learning, Teaching & Student Engagement\n",
-        "07:20 PM – 07:25 PM: JCU 101, followed by breakout room sessions\n\n",
-        "**Applicable Courses:**\n",
-        "Part-Time Diploma of Higher Education (Psychological Science)\n",
-        "Part-Time Bachelor of Psychological Science\n",
-        "Part-Time Master of Guidance and Counselling\n",
-        "Part-Time Business Programs\n\n"
+        "The Welcome Speech is on 16 January 2025, from 07:00 PM to 08:30 PM."
       ]
     },
     {
-      "tag": "academic_briefing",
+      "tag": "welcome_speech_location",
       "patterns": [
-        "When is the Academic Briefing?",
-        "What time is Academic Briefing?"
+        "Where is the welcome speech held?"
       ],
       "responses": [
-        "**Academic Briefing:**\n",
-        "07:25 PM – 08:30 PM: Academic Advising by Associate Professor, Counselling\n",
-        "07:25 PM – 08:30 PM: Academic Advising by Academic Head, Social and Health Sciences\n",
-        "07:25 PM – 08:30 PM: Academic Advising by Academic Head, Business\n\n",
-        "Let’s get you started and better prepared for your academic program!"
+        "The Welcome Speech will be held at Block C, James Cook University Singapore."
       ]
     },
     {
-      "tag": "academic_briefing",
+      "tag": "welcome_speech_speakers",
       "patterns": [
-        "When is the academic briefing?",
-        "What is academic advising?",
-        "Who will conduct the academic briefing?"
+        "Who will give the welcome speech?"
       ],
       "responses": [
-        "For part-time students, academic advising takes place on 16 January 2025, from 07:25 PM to 08:30 PM. It will be conducted by Associate Professors and Academic Heads based on your course.",
-        "For full-time students, academic advising is on 16 January 2025, from 10:40 AM to 11:40 AM in breakout rooms."
+        "The Welcome Speech will be given by the Deputy Vice-Chancellor, Singapore, \nand the Acting Campus Dean & Head of Learning, Teaching & Student Engagement."
+      ]
+    },
+    {
+      "tag": "welcome_speech_schedule",
+      "patterns": [
+        "When will welcome speech is happening?"
+      ],
+      "responses": [
+        "Welcome Speech Schedule:\n07:00 PM – 07:10 PM: Welcome Speech by Deputy Vice-Chancellor, Singapore\n07:10 PM – 07:20 PM: Welcome Speech by Acting Campus Dean & Head of Learning, Teaching & Student Engagement\n07:20 PM – 07:25 PM: JCU 101\nProceed to Breakout Rooms"
+      ]
+    },
+    {
+      "tag": "academic_briefing_time",
+      "patterns": [
+        "When is the Academic Briefing?"
+      ],
+      "responses": [
+        "The Academic Briefing is on 16 January 2025, from 07:25 PM to 08:30 PM."
+      ]
+    },
+    {
+      "tag": "academic_briefing_details",
+      "patterns": [
+        "Who conducts the Academic Advising"
+      ],
+      "responses": [
+        "Academic Advising will be conducted by:\nAssociate Professor, Counselling\nAcademic Head, Social and Health Sciences\nAcademic Head, Business"
+      ]
+    },
+    {
+      "tag": "applicable_courses",
+      "patterns": [
+        "Which courses are applicable for the Welcome Speech?"
+      ],
+      "responses": [
+        "Applicable Courses:\nPart-Time Diploma of Higher Education (Psychological Science)\nPart-Time Bachelor of Psychological Science\nPart-Time Master of Guidance and Counselling\nPart-Time Business Programs"
       ]
     }
   ]
