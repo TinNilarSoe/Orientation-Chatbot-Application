@@ -1,5 +1,5 @@
 import json
-from model import get_response
+from prev_ver_chatbot.model import get_response
 
 # Load chatbot intents
 def load_intents(file_path):
