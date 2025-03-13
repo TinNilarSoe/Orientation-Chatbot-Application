@@ -1,5 +1,4 @@
 {
-  "_comment": "This file contains chatbot common intents and responses. Do not modify unless necessary.",
   "intents": [
     {
       "tag": "greeting",
@@ -21,21 +20,6 @@
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": [
-        "Bye",
-        "See you later",
-        "See ya",
-        "Bye bye",
-        "Goodbye"
-      ],
-      "responses": [
-        "See you later! Have a great time at James Cook University!",
-        "Goodbye! Don’t forget to check out your orientation schedule.",
-        "Bye! Reach out anytime if you need more information."
-      ]
-    },
-    {
       "tag": "condition",
       "patterns": [
         "How are you?",
@@ -54,8 +38,7 @@
         "Why should I attend orientation?"
       ],
       "responses": [
-        "Orientation at JCU is packed with essential information and fun activities to help you get familiar with the campus, meet new friends, and learn about student support services.",
-        "Orientation week is designed to help new students get familiar with campus, meet peers, and learn about available support services. Your attendance at orientation is important to start your university journey smoothly!"
+        "Orientation at JCU is packed with essential information and fun activities to help you get familiar with the campus, meet new friends, and learn about student support services. Your attendance at orientation is important to start your university journey smoothly!"
       ]
     },
     {
@@ -66,12 +49,11 @@
         "When does orientation week begin?"
       ],
       "responses": [
-        "Orientation week will take place from Monday, 06 January to Friday, 17 January 2025.",
-        "Orientation week begins on Monday, 06 January 2025."
+        "Orientation week will take place from Monday, 06 January to Friday, 17 January 2025."
       ]
     },
     {
-      "tag": "part-time_vs_full-time",
+      "tag": "part_time_full_time_orientation",
       "patterns": [
         "What is the difference between the part-time and full-time orientation schedules?",
         "difference between part-time and full-time",
@@ -113,7 +95,277 @@
         "What do I need for DigiLearn?"
       ],
       "responses": [
-        "DigiLearn is James Cook University's virtual learning environment. You must complete JCU GetStarted before attending the DigiLearn Workshops. Make sure to use a laptop or personal computer for DigiLearn workshops. Mobile phones and iPads are not recommended."
+        "DigiLearn is James Cook University's virtual learning environment. You must complete JCU GetStarted before attending the DigiLearn Workshops."
+      ]
+    },
+    {
+      "tag": "digilearn_requirements",
+      "patterns": [
+        "What do I need for DigiLearn?",
+        "Can I use my phone for DigiLearn?"
+      ],
+      "responses": [
+        "Make sure to use a laptop or personal computer for DigiLearn workshops. Mobile phones and iPads are not recommended."
+      ]
+    },
+    {
+      "tag": "pre_orientation",
+      "patterns": [
+        "What should I do before orientation?",
+        "What are the pre-orientation tasks?",
+        "What do I need to prepare before I arrive at JCU?",
+        "Things to do before orientation week"
+      ],
+      "responses": [
+        "Before Orientation Week, make sure to: \n1. Read up on more about Singapore before departing. \n2. Sign the Letter of Offer, Student Contract, Advisory Note, and other required Admissions Forms. \n3. Make a note of payment due dates and payment methods. \n4. Ensure all offer conditions are met prior to course commencement (if applicable). \n5. Attend the Reporting session with the Marketing and Admissions Office. \n6. Attend the Verification of Document (Individual) session. \n7. Collect your JCUS Student ID Card. \n8. Ensure you're digitally ready for online learning and blended courses. \n9. Complete your Student Pass formalities (if applicable)."
+      ]
+    },
+    {
+      "tag": "password_setup",
+      "patterns": [
+        "How do I set up my JCU password?",
+        "Where do I find my JCU Student ID for password setup?",
+        "How to set up a password on JCU GetStarted?"
+      ],
+      "responses": [
+        "Set up your password on JCU GetStarted with your 8-digit Student ID. You can find your Student ID on the top right-hand corner of your Letter of Offer. Contact the Admissions Office if you need assistance."
+      ]
+    },
+    {
+      "tag": "student_email",
+      "patterns": [
+        "How do I log into my JCU email?",
+        "Where do I check my student email?",
+        "What is the official communication channel at JCU?"
+      ],
+      "responses": [
+        "Log into your JCU Student Email account regularly. This is your official communication channel with any staff from JCU. Make sure to check it for important updates."
+      ]
+    },
+    {
+      "tag": "jcu_calendar",
+      "patterns": [
+        "Where can I find the JCU calendar?",
+        "What are important dates to remember at JCU?",
+        "Where can I download the academic calendar?"
+      ],
+      "responses": [
+        "Download the JCU Calendars to view important dates. You can either print them out or note them down in your diary to stay on top of key deadlines."
+      ]
+    },
+    {
+      "tag": "orientation_week_tasks",
+      "patterns": [
+        "What should I do during orientation week?",
+        "What is part of the JCU orientation?",
+        "What activities are there during orientation?"
+      ],
+      "responses": [
+        "During Orientation Week, you should: \n1. Attend the Course Welcome, DigiLearn Workshops, and JCU 101 sessions. \n2. Log into LearnJCU to find information on your subjects, including textbook lists, assessment topics, deadlines, and grading information. \n3. Familiarize yourself with the Student IT Essentials, such as free software (Office 365), computers, printers, email, and wireless networks (eduroam)."
+      ]
+    },
+    {
+      "tag": "learnjcu_login",
+      "patterns": [
+        "How do I log into LearnJCU?",
+        "What is LearnJCU?",
+        "How do I access course information on LearnJCU?"
+      ],
+      "responses": [
+        "Log into LearnJCU to find information related to your subjects. You will find textbooks, assessment topics, deadlines, and grading information provided by your lecturers."
+      ]
+    },
+    {
+      "tag": "first_payment_installment",
+      "patterns": [
+        "How do I make the first installment payment?",
+        "When is the first payment due?",
+        "Do I need to pay my fees during orientation?"
+      ],
+      "responses": [
+        "Make your first installment of course fees and International Student Registration fees (if applicable) as per the payment advice in the Student Contract. If you require an extension, submit the Request for Student Finance form."
+      ]
+    },
+    {
+      "tag": "accessability_services",
+      "patterns": [
+        "How do I register for AccessAbility Services?",
+        "What is AccessAbility Services?",
+        "Where can I find help with disabilities or health conditions?"
+      ],
+      "responses": [
+        "Register for AccessAbility Services if you have a disability, health condition, or injury that might impact your studies. This service can provide the support and accommodations you need."
+      ]
+    },
+    {
+      "tag": "student_services_overview",
+      "patterns": [
+        "What services are available at JCU?",
+        "Where can I find support services at JCU?",
+        "What services should I be aware of as a student?"
+      ],
+      "responses": [
+        "Familiarize yourself with various student services at JCU, including: \n- AccessAbility Services \n- Accommodation \n- Careers Services \n- Counselling \n- Student Affairs \n- JCU Student Council \n- Learning Advisors \n- Library Services \n- ICT Team"
+      ]
+    },
+    {
+      "tag": "transportation_options",
+      "patterns": [
+        "How do I get to JCU Singapore?",
+        "What are the transportation options to JCU?",
+        "How can I save on transport costs to JCU?"
+      ],
+      "responses": [
+        "Explore the various transportation options to and from JCU Singapore, including public transport. You can also benefit from transport concessions if you use public transport regularly."
+      ]
+    },
+    {
+      "tag": "student_community_engagement",
+      "patterns": [
+        "How can I connect with other students?",
+        "Are there student groups at JCU?",
+        "Where can I join student interest groups?"
+      ],
+      "responses": [
+        "Become part of JCU's virtual communities through social media platforms such as Facebook, Instagram, LinkedIn, YouTube, and more. You can also get involved in JCU Singapore's student interest groups and communities."
+      ]
+    },
+    {
+      "tag": "subject_outlines",
+      "patterns": [
+        "Where can I find subject outlines?",
+        "What is in a subject outline?",
+        "Do I need to read the subject outlines?"
+      ],
+      "responses": [
+        "Subject Outlines are available on LearnJCU. They provide crucial information about your course, such as the lecturer's contact details, consultation hours, academic expectations, and assessment guidelines."
+      ]
+    },
+    {
+      "tag": "learning_center",
+      "patterns": [
+        "What is the Learning Centre?",
+        "How do I use the Learning Centre?",
+        "Where can I find resources to improve my academic skills?"
+      ],
+      "responses": [
+        "Visit the Learning Centre to access online resources, free short courses, and workshops aimed at improving your writing, referencing, time management, and learning techniques."
+      ]
+    },
+    {
+      "tag": "estudent_access",
+      "patterns": [
+        "What is eStudent?",
+        "How do I access my class schedule on eStudent?",
+        "Where do I find my enrolment information?"
+      ],
+      "responses": [
+        "Log into eStudent to view your enrolment details, check your class schedule, and track your academic progress. It's your portal for all things related to your enrollment and results."
+      ]
+    },
+    {
+      "tag": "student_finance_extension",
+      "patterns": [
+        "What if I need more time to pay my fees?",
+        "How can I request an extension for my payment?",
+        "I need help with my payment deadlines"
+      ],
+      "responses": [
+        "If you require an extension for paying your course fees or other fees, you can submit a 'Request for Student Finance' form to seek assistance or contact the Student Finance office."
+      ]
+    },
+    {
+      "tag": "census_date",
+      "patterns": [
+        "What is the Census Date?",
+        "When is the Census Date?",
+        "What happens if I miss the Census Date?"
+      ],
+      "responses": [
+        "The Census Date is an important deadline that typically falls in the third week of your studies. If you wish to withdraw from a subject or courses, you must do so before this date to avoid incurring fees or academic penalties."
+      ]
+    },
+    {
+      "tag": "library_resources",
+      "patterns": [
+        "How do I use the library at JCU?",
+        "What resources are available in the JCU library?",
+        "Where can I find research and writing guides?"
+      ],
+      "responses": [
+        "Explore the JCU library to access a variety of academic resources. The JCU InfoSkills Toolkit is an excellent resource to help you find research materials and references for your assignments."
+      ]
+    },
+    {
+      "tag": "jcu_student_id_card",
+      "patterns": [
+        "When can I collect my student ID card?",
+        "Where do I get my JCUS Student ID card?",
+        "How do I collect my student ID card?"
+      ],
+      "responses": [
+        "You can collect your JCUS Student ID card during the Verification of Document (Individual) session or as part of your orientation week activities."
+      ]
+    },
+    {
+      "tag": "academic_planning",
+      "patterns": [
+        "How do I contact academic planning?",
+        "What is the email for academic planning?",
+        "Who can help with subject clashes?",
+        "I need assistance with my class schedule."
+      ],
+      "responses": [
+        "For Academic Planning issues, email pd-singapore@jcu.edu.au or call: +65 6709 3667 (Undergrad IT/Science/Business) or +65 6709 3665 (Postgrad Business, Psychology, Education).",
+        "If you have scheduling conflicts, reach out to the Academic Planning team at pd-singapore@jcu.edu.au."
+      ]
+    },
+    {
+      "tag": "accommodation",
+      "patterns": [
+        "Who should I contact for accommodation help?",
+        "How do I find student housing?",
+        "Where can I get help with off-campus housing?"
+      ],
+      "responses": [
+        "Accommodation support is available at Block C, C1-09. Call +65 9238 9735 or email accommodation-singapore@jcu.edu.au.",
+        "For assistance with both short-term and long-term housing, contact the Accommodation team at accommodation-singapore@jcu.edu.au."
+      ]
+    },
+    {
+      "tag": "attendance_monitoring",
+      "patterns": [
+        "Where is the attendance monitoring office?",
+        "Who do I contact about attendance issues?",
+        "How can I check my attendance record?"
+      ],
+      "responses": [
+        "The Attendance Monitoring Office is in Block C, C1-12A. Call +65 6709 3662 or +65 8139 7157, or email attendance-singapore@jcu.edu.au.",
+        "For attendance-related inquiries, email attendance-singapore@jcu.edu.au."
+      ]
+    },
+    {
+      "tag": "counselling",
+      "patterns": [
+        "What is the counselling office contact?",
+        "How can I get mental health support?",
+        "Is counselling free for students?"
+      ],
+      "responses": [
+        "Counselling services are free and confidential. Contact +65 6709 3671 or email studentcounselling-singapore@jcu.edu.au.",
+        "If you need a listening ear, reach out to our Counselling & Wellbeing Office at studentcounselling-singapore@jcu.edu.au."
+      ]
+    },
+    {
+      "tag": "career_services",
+      "patterns": [
+        "Who do I talk to about careers?",
+        "Where can I find internship opportunities?",
+        "How can I get help with my resume?"
+      ],
+      "responses": [
+        "For career services, email careers-singapore@jcu.edu.au or call +65 6709 3853 / +65 6709 3855.",
+        "Visit the Student Careers Office for career counseling, resume critiques, and job search strategies."
       ]
     }
   ]

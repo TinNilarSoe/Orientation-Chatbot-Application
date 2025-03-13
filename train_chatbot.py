@@ -1,10 +1,12 @@
 import json
 from model import get_response
 
+
 # Load chatbot intents
 def load_intents(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         return json.load(file)
+
 
 # Main Execution
 if __name__ == "__main__":

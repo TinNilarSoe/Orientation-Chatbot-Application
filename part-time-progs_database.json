@@ -1,52 +1,81 @@
 {
-  "_comment": "This file contains responses only for part-time program. Can be modified for further changes.",
   "intents": [
     {
-      "tag": "welcome_speech",
+      "tag": "ws_event_time",
       "patterns": [
-        "When is the welcome speech?",
-        "Who will give the welcome speech?",
-        "What happens in the welcome speech?",
-        "Where is the welcome speech held?",
-        "What time is the welcome speech?"
+        "What time is the welcome speech happening?",
+        "When does the welcome speech take place?",
+        "What is the timing for the welcome speech?"
       ],
       "responses": [
-        "The Welcome Speech and Academic Briefing will be held on **16 January 2025**, from **07:00 PM to 08:30 PM** at **Block C, James Cook University Singapore**. \n\n",
-        "**Welcome Speech Schedule:**\n",
-        "07:00 PM – 07:10 PM: Welcome Speech by Deputy Vice-Chancellor, Singapore\n",
-        "07:10 PM – 07:20 PM: Welcome Speech by Acting Campus Dean & Head of Learning, Teaching & Student Engagement\n",
-        "07:20 PM – 07:25 PM: JCU 101, followed by breakout room sessions\n\n",
-        "**Applicable Courses:**\n",
-        "Part-Time Diploma of Higher Education (Psychological Science)\n",
-        "Part-Time Bachelor of Psychological Science\n",
-        "Part-Time Master of Guidance and Counselling\n",
-        "Part-Time Business Programs\n\n"
+        "The Welcome Speech is scheduled for 16 January 2025, from 07:00 PM to 08:30 PM."
       ]
     },
     {
-      "tag": "academic_briefing",
+      "tag": "ws_venue_location",
       "patterns": [
-        "When is the Academic Briefing?",
-        "What time is Academic Briefing?"
+        "Where will the welcome speech be held?",
+        "What is the venue for the welcome speech?",
+        "Can you tell me where the event is?"
       ],
       "responses": [
-        "**Academic Briefing:**\n",
-        "07:25 PM – 08:30 PM: Academic Advising by Associate Professor, Counselling\n",
-        "07:25 PM – 08:30 PM: Academic Advising by Academic Head, Social and Health Sciences\n",
-        "07:25 PM – 08:30 PM: Academic Advising by Academic Head, Business\n\n",
-        "Let’s get you started and better prepared for your academic program!"
+        "The Welcome Speech will take place at Block C, James Cook University Singapore."
       ]
     },
     {
-      "tag": "academic_briefing",
+      "tag": "ws_speakers_list",
       "patterns": [
-        "When is the academic briefing?",
-        "What is academic advising?",
-        "Who will conduct the academic briefing?"
+        "Who are the speakers at the welcome speech?",
+        "Can you tell me who will be speaking at the welcome speech?",
+        "Who will be presenting the welcome speech?"
       ],
       "responses": [
-        "For part-time students, academic advising takes place on 16 January 2025, from 07:25 PM to 08:30 PM. It will be conducted by Associate Professors and Academic Heads based on your course.",
-        "For full-time students, academic advising is on 16 January 2025, from 10:40 AM to 11:40 AM in breakout rooms."
+        "The Welcome Speech will be presented by the Deputy Vice-Chancellor of Singapore, and the Acting Campus Dean & Head of Learning, Teaching & Student Engagement."
+      ]
+    },
+    {
+      "tag": "ws_event_schedule",
+      "patterns": [
+        "What is the schedule for the welcome speech event?",
+        "Can you share the timeline for the welcome speech?",
+        "What is the detailed schedule for the welcome speech?"
+      ],
+      "responses": [
+        "The Welcome Speech Schedule is as follows:\n07:00 PM – 07:10 PM: Welcome Speech by the Deputy Vice-Chancellor of Singapore\n07:10 PM – 07:20 PM: Welcome Speech by the Acting Campus Dean & Head of Learning, Teaching & Student Engagement\n07:20 PM – 07:25 PM: JCU 101\nProceed to Breakout Rooms"
+      ]
+    },
+    {
+      "tag": "ab_briefing_time",
+      "patterns": [
+
+        "What time is the Academic Briefing scheduled for?",
+        "Can you tell me the time for academic advising?",
+        "When does the academic session start?"
+      ],
+      "responses": [
+        "The Academic Briefing will take place on 16 January 2025, from 07:25 PM to 08:30 PM."
+      ]
+    },
+    {
+      "tag": "ab_briefing_info",
+      "patterns": [
+        "Who is conducting the Academic Advising session?",
+        "Who will be leading the Academic Briefing?",
+        "Who are the instructors for the academic session?"
+      ],
+      "responses": [
+        "The Academic Briefing will be led by:\n- Associate Professor, Counselling\n- Academic Head, Social and Health Sciences\n- Academic Head, Business"
+      ]
+    },
+    {
+      "tag": "eligible_courses_list",
+      "patterns": [
+        "Which courses are available for the Welcome Speech?",
+        "What programs are eligible for the Welcome Speech?",
+        "What courses can I join for the event?"
+      ],
+      "responses": [
+        "The eligible courses for the Welcome Speech are:\n- Part-Time Diploma of Higher Education (Psychological Science)\n- Part-Time Bachelor of Psychological Science\n- Part-Time Master of Guidance and Counselling\n- Part-Time Business Programs"
       ]
     }
   ]

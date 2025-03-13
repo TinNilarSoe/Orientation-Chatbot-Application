@@ -9,9 +9,11 @@ from googletrans import Translator
 nlp = spacy.load("en_core_web_md")
 translator = Translator()
 
+
 # Convert sentence into vector using spaCy embeddings
 def get_sentence_vector(sentence):
     return nlp(sentence).vector.reshape(1, -1)
+
 
 # Find best-matching intent using similarity
 def get_best_intent(user_input, intents):
@@ -30,6 +32,7 @@ def get_best_intent(user_input, intents):
 
     return best_match if highest_similarity > 0.6 else None  # Adjust threshold as needed
 
+
 # Translate non-English input to English
 def translate_to_english(text):
     detected_lang = translator.detect(text).lang
@@ -37,6 +40,7 @@ def translate_to_english(text):
         translated_text = translator.translate(text, dest="en").text
         return translated_text
     return text
+
 
 # Function to find best-matching response
 def get_response(user_input, intents):
