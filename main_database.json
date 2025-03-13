@@ -21,21 +21,6 @@
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": [
-        "Bye",
-        "See you later",
-        "See ya",
-        "Bye bye",
-        "Goodbye"
-      ],
-      "responses": [
-        "See you later! Have a great time at James Cook University!",
-        "Goodbye! Don’t forget to check out your orientation schedule.",
-        "Bye! Reach out anytime if you need more information."
-      ]
-    },
-    {
       "tag": "condition",
       "patterns": [
         "How are you?",
