@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        /* Floating Chatbot Button */
+        #chatbot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border: none;
+            font-size: 18px;
+        }
+
+        #chatbot-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Chatbot Container */
+        #chatbot-container {
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            width: 350px;
+            height: 450px;
+            border: none;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        /* Header of the chatbot */
+        #chatbot-header {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        #chatbot-header:hover {
+            background-color: #0056b3;
+        }
+
+        /* Message area of the chatbot */
+        #chatbot-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            height: calc(100% - 80px);
+            font-size: 14px;
+            color: #333;
+        }
+
+        .bot, .user {
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* Bot message styling */
+        .bot {
+            background-color: #e1f5fe;
+            color: #007BFF;
+            align-self: flex-start;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        /* User message styling */
+        .user {
+            background-color: #f1f0f0;
+            color: #333;
+            align-self: flex-end;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        /* User input field */
+        #user-input {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        /* Chatbot animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chatbot-button">💬</div>
+
+    <div id="chatbot-container">
+        <div id="chatbot-header">Chatbot</div>
+        <div id="chatbot-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off">
+    </div>
+
+    <script>
+        const chatbotContainer = document.getElementById('chatbot-container');
+        const chatbotButton = document.getElementById('chatbot-button');
+        const messagesDiv = document.getElementById('chatbot-messages');
+        const userInputField = document.getElementById('user-input');
+
+        let userType = null;
+
+        // Toggle the chatbot window
+        chatbotButton.onclick = function () {
+            chatbotContainer.style.display = chatbotContainer.style.display === 'none' ? 'flex' : 'none';
+            if (chatbotContainer.style.display === 'flex' && userType === null) {
+                askUserType(); // Greet and ask for full-time or part-time
+            }
+        };
+
+        // Ask the user to choose full-time or part-time
+        function askUserType() {
+            addMessage("Bot: Welcome to the Student Orientation Chatbot! Are you a full-time or part-time student? (Type 'full-time' or 'part-time')", 'bot');
+        }
+
+        // Add messages to the chat window
+        function addMessage(message, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.textContent = message;
+            messageElement.classList.add(sender);
+            messagesDiv.appendChild(messageElement);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Handle user input
+        userInputField.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter' && userInputField.value.trim() !== '') {
+                const userInput = userInputField.value.trim();
+                userInputField.value = '';
+
+                addMessage("You: " + userInput, 'user');
+
+                if (userType === null) {
+                    // User selects full-time or part-time
+                    if (userInput.toLowerCase() === 'full-time' || userInput.toLowerCase() === 'part-time') {
+                        userType = userInput.toLowerCase();
+                        addMessage("Bot: Great! You're a " + userType + " student. How can I help you?", 'bot');
+                    } else {
+                        addMessage("Bot: Please type 'full-time' or 'part-time'.", 'bot');
+                    }
+                } else {
+                    // Send input to Flask backend
+                    askQuestion(userInput);
+                }
+            }
+        });
+
+        // Function to communicate with the Flask backend
+        function askQuestion(userInput) {
+            fetch('http://127.0.0.1:5000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ query: userInput, user_type: userType })
+            })
+            .then(response => response.json())
+            .then(data => {
+                addMessage("Bot: " + data.response, 'bot');
+            })
+            .catch(error => {
+                addMessage("Bot: Sorry, something went wrong.", 'bot');
+                console.error(error);
+            });
+        }
+    </script>
+
+</body>
+</html>

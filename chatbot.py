@@ -1,8 +1,10 @@
 import json
 import random
 import numpy as np
+from flask import Flask, request, jsonify, render_template
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from flask_cors import CORS
 
 
 # Load JSON databases
@@ -19,13 +21,11 @@ part_time_db = load_json("part-time-progs_database.json")["intents"]
 # Combine all patterns for training
 def prepare_training_data(databases):
     patterns, tags = [], []
-
     for db in databases:
         for item in db:
             for pattern in item["patterns"]:
                 patterns.append(pattern)
                 tags.append(item["tag"])
-
     return patterns, tags
 
 
@@ -65,39 +65,46 @@ def get_response(tag, selected_db):
     return "I'm sorry, I don't have information on that."
 
 
-# Main chatbot function
-def chatbot():
-    print("Welcome to the Student Orientation Chatbot!")
-    print("Are you a Full-time or Part-time student? (Type 'full-time' or 'part-time')")
+# Initialize Flask app
+app = Flask(__name__)
 
-    # Choose database
-    while True:
-        user_type = input("You: ").strip().lower()
-        if user_type in ["full-time", "part-time"]:
-            selected_db = full_time_db if user_type == "full-time" else part_time_db
-            print(f"Great! You're a {user_type} student. How can I help you?")
-            break
-        else:
-            print("Please enter 'full-time' or 'part-time'.")
-
-    # Chat loop
-    while True:
-        user_input = input("You: ").strip().lower()
-
-        if user_input in ["exit", "quit", "bye"]:
-            print("See you later! Have a great time at James Cook University!")
-            break
-
-        tag = find_best_match(user_input)
-
-        if tag:
-            response = get_response(tag, selected_db)
-        else:
-            response = "Sorry, I couldn't understand that. Could you rephrase?"
-
-        print("Bot:", response)
+# Enable CORS to allow cross-origin requests (necessary for local testing)
+CORS(app)
 
 
-# Run chatbot
+# Serve the HTML page
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    data = request.json
+    user_input = data.get("query", "").strip()
+    user_type = data.get("user_type", "").strip()
+
+    # Start with an initial greeting or reset if needed
+    if user_input.lower() in ["exit", "quit", "bye"]:
+        return jsonify({"response": "See you later! Have a great time at James Cook University!", "reset": True})
+
+    if user_type == "full-time":
+        selected_db = full_time_db
+    elif user_type == "part-time":
+        selected_db = part_time_db
+    else:
+        return jsonify({"response": "Please select a valid student type (full-time or part-time)."})
+
+    # NLP processing and response generation
+    tag = find_best_match(user_input)
+
+    if tag:
+        response = get_response(tag, selected_db)
+    else:
+        response = "Sorry, I couldn't understand that. Could you rephrase?"
+
+    return jsonify({"response": response, "reset": False})
+
+
 if __name__ == "__main__":
-    chatbot()
+    app.run(port=5000, debug=True)
