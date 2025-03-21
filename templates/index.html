@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Basic Reset */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Light background color */
+            background-color: #f4f4f4;
         }
 
         /* Floating Chatbot Button */
@@ -25,11 +26,23 @@
             cursor: pointer;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
             border: none;
-            font-size: 18px;
+            font-size: 24px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        #chatbot-button.hidden {
+            display: none; /* Hide the icon */
         }
 
         #chatbot-button:hover {
             background-color: #0056b3;
+            transform: scale(1.1);
         }
 
         /* Chatbot Container */
@@ -76,6 +89,7 @@
             color: #333;
         }
 
+        /* Styling for bot and user messages */
         .bot, .user {
             margin-bottom: 12px;
             padding: 10px;
@@ -120,14 +134,29 @@
                 opacity: 1;
             }
         }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Chatbot Button with FontAwesome Icon -->
+    <div id="chatbot-button">
+        <i class="fas fa-comment-dots"></i>
+    </div>
 
-    <div id="chatbot-button">💬</div>
-
-    <div id="chatbot-container">
-        <div id="chatbot-header">Chatbot</div>
+    <!-- Chatbot Container (Hidden by default, displayed when button clicked) -->
+    <div id="chatbot-container" style="display:none;">
+        <div id="chatbot-header">JCU Chatbot</div>
         <div id="chatbot-messages"></div>
         <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off">
     </div>
@@ -139,14 +168,26 @@
         const userInputField = document.getElementById('user-input');
 
         let userType = null;
+        let welcomeMessageShown = false; // Flag to track if the welcome message has been shown
 
         // Toggle the chatbot window
-        chatbotButton.onclick = function () {
+        chatbotButton.onclick = function (event) {
+            event.stopPropagation(); // Prevent the click from propagating to the document
             chatbotContainer.style.display = chatbotContainer.style.display === 'none' ? 'flex' : 'none';
-            if (chatbotContainer.style.display === 'flex' && userType === null) {
-                askUserType(); // Greet and ask for full-time or part-time
+            chatbotButton.classList.toggle('hidden', chatbotContainer.style.display === 'flex');
+            if (chatbotContainer.style.display === 'flex' && !welcomeMessageShown && userType === null) {
+                askUserType();
+                welcomeMessageShown = true; // Set the flag to true after showing the welcome message
             }
         };
+
+        // Close the chat window when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!chatbotContainer.contains(event.target) && !chatbotButton.contains(event.target)) {
+                chatbotContainer.style.display = 'none';
+                chatbotButton.classList.remove('hidden');
+            }
+        });
 
         // Ask the user to choose full-time or part-time
         function askUserType() {
@@ -171,7 +212,6 @@
                 addMessage("You: " + userInput, 'user');
 
                 if (userType === null) {
-                    // User selects full-time or part-time
                     if (userInput.toLowerCase() === 'full-time' || userInput.toLowerCase() === 'part-time') {
                         userType = userInput.toLowerCase();
                         addMessage("Bot: Great! You're a " + userType + " student. How can I help you?", 'bot');
@@ -179,7 +219,6 @@
                         addMessage("Bot: Please type 'full-time' or 'part-time'.", 'bot');
                     }
                 } else {
-                    // Send input to Flask backend
                     askQuestion(userInput);
                 }
             }
@@ -204,6 +243,5 @@
             });
         }
     </script>
-
 </body>
 </html>
