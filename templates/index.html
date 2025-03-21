@@ -26,9 +26,9 @@
             cursor: pointer;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
             border: none;
-            font-size: 24px;
-            width: 60px;
-            height: 60px;
+            font-size: 32px;
+            width: 50px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,7 +51,7 @@
             bottom: 0;
             right: 20px;
             width: 350px;
-            height: 450px;
+            height: 550px;
             border: none;
             background-color: #ffffff;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -67,8 +67,9 @@
             background-color: #007BFF;
             color: white;
             padding: 12px;
+            height:25px;
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             cursor: pointer;
             border-top-left-radius: 12px;
@@ -85,44 +86,94 @@
             padding: 15px;
             overflow-y: auto;
             height: calc(100% - 80px);
-            font-size: 14px;
+            font-size: 16px;
             color: #333;
         }
 
         /* Styling for bot and user messages */
-        .bot, .user {
+        .message {
+            display: flex;
+            align-items: flex-start;
             margin-bottom: 12px;
+        }
+
+        .bot .avatar, .user .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        .bot .avatar {
+            background-color: #007BFF;
+        }
+
+        .user .avatar {
+            background-color: #6c757d;
+        }
+
+        .bot .text, .user .text {
             padding: 10px;
             border-radius: 8px;
+            max-width: 80%;
+            word-wrap: break-word;
         }
 
         /* Bot message styling */
-        .bot {
+        .bot .text {
             background-color: #e1f5fe;
             color: #007BFF;
-            align-self: flex-start;
-            max-width: 80%;
-            word-wrap: break-word;
         }
 
         /* User message styling */
-        .user {
+        .user .text {
             background-color: #f1f0f0;
             color: #333;
-            align-self: flex-end;
-            max-width: 80%;
-            word-wrap: break-word;
+        }
+
+        /* Input container */
+        #input-container {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-top: 1px solid #ccc;
         }
 
         /* User input field */
         #user-input {
-            padding: 12px;
-            width: 100%;
+            flex: 1;
+            padding: 10px;
             border: none;
-            border-top: 1px solid #ccc;
-            font-size: 14px;
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            resize: none; /* Disable manual resizing */
+            overflow: hidden; /* Hide scrollbar */
+        }
+
+        /* Send button */
+        #send-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        #send-button:hover {
+            background-color: #0056b3;
         }
 
         /* Chatbot animation */
@@ -156,9 +207,12 @@
 
     <!-- Chatbot Container (Hidden by default, displayed when button clicked) -->
     <div id="chatbot-container" style="display:none;">
-        <div id="chatbot-header">JCU Chatbot</div>
+        <div id="chatbot-header">Orientation Chatbot</div>
         <div id="chatbot-messages"></div>
-        <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off">
+        <div id="input-container">
+            <textarea id="user-input" placeholder="Type your question..." autocomplete="off"></textarea>
+            <button id="send-button"><i class="fas fa-arrow-right"></i></button>
+        </div>
     </div>
 
     <script>
@@ -166,6 +220,7 @@
         const chatbotButton = document.getElementById('chatbot-button');
         const messagesDiv = document.getElementById('chatbot-messages');
         const userInputField = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
 
         let userType = null;
         let welcomeMessageShown = false; // Flag to track if the welcome message has been shown
@@ -191,38 +246,66 @@
 
         // Ask the user to choose full-time or part-time
         function askUserType() {
-            addMessage("Bot: Welcome to the Student Orientation Chatbot! Are you a full-time or part-time student? (Type 'full-time' or 'part-time')", 'bot');
+            addMessage("Welcome to the Student Orientation Chatbot! Are you a full-time or part-time student? (Type 'full-time' or 'part-time')", 'bot');
         }
 
         // Add messages to the chat window
         function addMessage(message, sender) {
             const messageElement = document.createElement('div');
-            messageElement.textContent = message;
-            messageElement.classList.add(sender);
+            messageElement.classList.add('message', sender);
+
+            // Avatar for bot or user
+            const avatar = document.createElement('div');
+            avatar.classList.add('avatar');
+            avatar.innerHTML = sender === 'bot' ? '<i class="fas fa-robot"></i>' : '<i class="fas fa-user"></i>';
+            messageElement.appendChild(avatar);
+
+            // Text content
+            const text = document.createElement('div');
+            text.classList.add('text');
+            text.textContent = sender === 'bot' ? `Bot: ${message}` : `You: ${message}`;
+            messageElement.appendChild(text);
+
             messagesDiv.appendChild(messageElement);
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
         }
 
         // Handle user input
-        userInputField.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter' && userInputField.value.trim() !== '') {
+        userInputField.addEventListener('input', function () {
+            this.style.height = 'auto'; // Reset height to auto to calculate new height
+            this.style.height = (this.scrollHeight) + 'px'; // Set height to scrollHeight
+        });
+
+        // Send message on Enter key or send button click
+        function sendMessage() {
+            if (userInputField.value.trim() !== '') {
                 const userInput = userInputField.value.trim();
                 userInputField.value = '';
+                userInputField.style.height = 'auto'; // Reset height after sending message
 
-                addMessage("You: " + userInput, 'user');
+                addMessage(userInput, 'user');
 
                 if (userType === null) {
                     if (userInput.toLowerCase() === 'full-time' || userInput.toLowerCase() === 'part-time') {
                         userType = userInput.toLowerCase();
-                        addMessage("Bot: Great! You're a " + userType + " student. How can I help you?", 'bot');
+                        addMessage(`Great! You're a ${userType} student. How can I help you?`, 'bot');
                     } else {
-                        addMessage("Bot: Please type 'full-time' or 'part-time'.", 'bot');
+                        addMessage("Please type 'full-time' or 'part-time'.", 'bot');
                     }
                 } else {
                     askQuestion(userInput);
                 }
             }
+        }
+
+        userInputField.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault(); // Prevent default behavior (new line)
+                sendMessage();
+            }
         });
+
+        sendButton.addEventListener('click', sendMessage);
 
         // Function to communicate with the Flask backend
         function askQuestion(userInput) {
@@ -235,10 +318,10 @@
             })
             .then(response => response.json())
             .then(data => {
-                addMessage("Bot: " + data.response, 'bot');
+                addMessage(data.response, 'bot');
             })
             .catch(error => {
-                addMessage("Bot: Sorry, something went wrong.", 'bot');
+                addMessage("Sorry, something went wrong.", 'bot');
                 console.error(error);
             });
         }
