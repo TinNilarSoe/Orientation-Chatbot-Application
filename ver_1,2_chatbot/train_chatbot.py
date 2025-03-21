@@ -10,7 +10,7 @@ def load_intents(file_path):
 
 # Main Execution
 if __name__ == "__main__":
-    intents = load_intents("prev_ver_chatbot/chatbot_db.json")
+    intents = load_intents("../prev_ver_chatbot/chatbot_db.json")
 
     print("Chatbot is running! Type 'exit' to stop.")
 

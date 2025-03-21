@@ -10,9 +10,9 @@ def load_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
-main_db = load_json('main_database.json')
-full_time_db = load_json('full-time-progs_database.json')
-part_time_db = load_json('part-time-progs_database.json')
+main_db = load_json('../main_database.json')
+full_time_db = load_json('../full-time-progs_database.json')
+part_time_db = load_json('../part-time-progs_database.json')
 
 # Combine all intents for training
 all_intents = main_db['intents'] + full_time_db['intents'] + part_time_db['intents']
