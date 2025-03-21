@@ -51,7 +51,8 @@
     {
       "tag": "explore_booths",
       "patterns": [
-        "When can I visit the booths?",
+        "When can I visit the booth?",
+        "explore booth",
         "Where can I visit the orientation booths?",
         "What can I do at the orientation booths?"
       ],
