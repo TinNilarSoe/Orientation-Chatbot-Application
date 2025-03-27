@@ -3,6 +3,7 @@
     {
       "tag": "medical_checkup_student_pass",
       "patterns": [
+        "Checkup",
         "What do I need for the medical check-up?",
         "When should I complete my Student’s Pass formalities?",
         "Do I need to undergo a medical check-up in Singapore?"
@@ -20,8 +21,7 @@
         "Who will give the welcome speech?"
       ],
       "responses": [
-        "The Welcome Speech will be on 16 January 2025 from 09:00 AM to 09:05 AM at Block C. The speech will be given by the Deputy Vice-Chancellor, Singapore, and the Acting Campus Dean & Head of Learning, Teaching, and Student Engagement.",
-        "Dress Code: Smart Casual (no shorts or slippers allowed)."
+        "The Welcome Speech will be on 16 January 2025 from 09:00 AM to 09:05 AM at Block C. The speech will be given by the Deputy Vice-Chancellor, Singapore, and the Acting Campus Dean & Head of Learning, Teaching, and Student Engagement. Dress Code: Smart Casual (no shorts or slippers allowed)."
       ]
     },
     {
