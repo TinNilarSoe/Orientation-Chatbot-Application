@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from flask_cors import CORS
 from googletrans import Translator
 
+
 translator = Translator()
 switch_keywords = {
     "full-time": [
