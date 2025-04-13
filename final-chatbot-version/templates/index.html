@@ -16,36 +16,54 @@
 </head>
 
 <body>
-    <!-- CHATBOT BUTTON:
-        Floating action button that toggles the chat interface -->
-    <div id="chatbot-button">
-        <!-- Chat bubble icon -->
-        <i class="fas fa-comment-dots"></i>
+<!-- CHATBOT BUTTON:
+    Floating action button that toggles the chat interface -->
+<div id="chatbot-button">
+    <!-- Chat bubble icon -->
+    <i class="fas fa-comment-dots"></i>
+</div>
+
+<!-- CHATBOT CONTAINER:
+    Hidden by default, appears when button is clicked -->
+<div id="chatbot-container" style="display:none;">
+    <!-- Chat header with title -->
+    <div id="chatbot-header">Orientation Chatbot</div>
+
+    <!-- Mode Selection Buttons (for quiz, emoji game, and FAQ) -->
+    <div id="mode-buttons">
+        <button id="quizBtn">Quiz</button>
+        <button id="emojiBtn">Emoji Game</button>
+        <button id="faqBtn">FAQ</button>
     </div>
 
-    <!-- CHATBOT CONTAINER:
-        Hidden by default, appears when button is clicked -->
-    <div id="chatbot-container" style="display:none;">
-        <!-- Chat header with title -->
-        <div id="chatbot-header">Orientation Chatbot</div>
-
-        <!-- Container for chat messages -->
-        <div id="chatbot-messages"></div>
-
-        <!-- Container for user type selection buttons (if needed) -->
-        <div id="type-buttons"></div>
-
-        <!-- User input area -->
-        <div id="input-area">
-            <!-- Text input field -->
-            <textarea id="user-input" placeholder="Type your message..." rows="1"></textarea>
-            <!-- Send button -->
-            <!-- Right arrow symbol -->
-            <button id="send-button">→</button>
+    <!-- Container for dynamic content (quiz, emoji game, FAQ) -->
+    <div id="content-container" style="display:none;">
+        <div id="game-header">
+            <span id="game-title">Game</span>
+            <button id="close-game">×</button>
         </div>
+        <div id="game-content"></div>
     </div>
 
-    <!-- Main JavaScript file -->
-    <script src="/static/script.js"></script>
+    <!-- Container for chat messages -->
+    <div id="chatbot-messages"></div>
+
+    <!-- Container for user type selection buttons (if needed) -->
+    <div id="type-buttons"></div>
+
+    <!-- User input area -->
+    <div id="input-area">
+        <!-- Text input field -->
+        <textarea id="user-input" placeholder="Type your message..." rows="1"></textarea>
+        <!-- Send button -->
+        <!-- Right arrow symbol -->
+        <button id="send-button">→</button>
+    </div>
+
+</div>
+
+<!-- Main JavaScript file -->
+<script src="/static/script.js"></script>
+
 </body>
 </html>
