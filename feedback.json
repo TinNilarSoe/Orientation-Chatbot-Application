@@ -1,0 +1,27 @@
+[
+    {
+        "rating": 5,
+        "comment": "Very good!",
+        "user_type": "unknown"
+    },
+    {
+        "rating": 5,
+        "comment": "The best of the best ^^",
+        "user_type": "unknown"
+    },
+    {
+        "rating": 5,
+        "comment": "Muah :3",
+        "user_type": "unknown"
+    },
+    {
+        "rating": 5,
+        "comment": "Sugoi!!",
+        "user_type": "unknown"
+    },
+    {
+        "rating": 5,
+        "comment": "Fun playing games",
+        "user_type": "unknown"
+    }
+]
