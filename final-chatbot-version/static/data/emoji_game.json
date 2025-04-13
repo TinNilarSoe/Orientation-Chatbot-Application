@@ -1,0 +1,42 @@
+[
+  {
+    "emoji": "🌧☔💧",
+    "question": "What kind of weather is this?",
+    "answer": ["Rainy", "Rain", "Wet", "Drizzling"]
+  },
+  {
+    "emoji": "📚📝🏫",
+    "question": "Where would you most likely see these?",
+    "answer": ["School", "Classroom", "Education", "College"]
+  },
+  {
+    "emoji": "🍔🍟🥤",
+    "question": "What kind of meal is this?",
+    "answer": ["Fast food", "Junk food", "Burger meal", "Takeout"]
+  },
+  {
+    "emoji": "🛫🌍🧳",
+    "question": "What activity do these emojis represent?",
+    "answer": ["Travel", "Vacation", "Trip", "Flying"]
+  },
+  {
+    "emoji": "🎓📖👨‍🏫",
+    "question": "What event do these represent?",
+    "answer": ["Graduation", "Commencement", "Degree ceremony", "Finishing school"]
+  },
+  {
+    "emoji": "🎄🎁🕯",
+    "question": "What holiday is this?",
+    "answer": ["Christmas", "Xmas", "December", "Winter"]
+  },
+  {
+    "emoji": "⚽🥅🏆",
+    "question": "What event or activity is this?",
+    "answer": ["Soccer", "Football", "Match", "Game"]
+  },
+  {
+    "emoji": "🎤🎶🎧",
+    "question": "What do these emojis represent?",
+    "answer": ["Music", "Singing", "Karaoke", "Concert"]
+  }
+]
