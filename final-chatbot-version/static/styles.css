@@ -2,6 +2,20 @@
    GLOBAL STYLES & RESET
    ============================================= */
 
+/* General styling */
+:root {
+    --primary-color: #00609c; /* JCU Blue */
+    --secondary-color: #f7b32b; /* JCU Gold/Yellow */
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --light-gray: #e0e0e0;
+    --dark-gray: #666;
+    --success-color: #4caf50;
+    --error-color: #f44336;
+    --border-radius: 12px;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Basic reset for consistent styling across browsers */
 body {
     font-family: Arial, sans-serif;
@@ -25,7 +39,7 @@ body {
     padding: 15px;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border: none;
     font-size: 32px;
     width: 50px;
@@ -36,6 +50,7 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
     animation: pulse 2s infinite;
 }
+
 
 /* Hidden state for the button */
 #chatbot-button.hidden {
@@ -62,7 +77,7 @@ body {
     height: 550px;
     border: none;
     background-color: #ffffff;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     display: none;
     flex-direction: column;
@@ -110,12 +125,35 @@ body {
     margin-bottom: 12px;
 }
 
+/* Make user messages align to the left */
+.user {
+    flex-direction: row-reverse; /* Swap the order of user message and avatar */
+    justify-content: flex-start; /* Align user message to the left */
+}
+
+/* Bot messages align to the left by default */
+.bot {
+    justify-content: flex-start;
+}
+
 /* Avatar styling for both bot and user */
-.bot .avatar, .user .avatar {
+.user .avatar {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: 10px; /* Left margin for avatars */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+}
+
+.bot .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px; /* Left margin for avatars */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,6 +203,13 @@ body {
     background: white;
     border-top: 1px solid #eee;
     align-items: center;
+    justify-content: flex-end;
+    transition: align-items 0.2s ease;
+}
+
+/* Hidden state for input area */
+#input-area.hidden {
+    display: none;
 }
 
 /* Replace existing #user-input styles with: */
@@ -292,18 +337,6 @@ body {
     padding-bottom: 100px;
 }
 
-/* Hidden state for input area */
-#input-area.hidden {
-    display: none;
-}
-
-/* Add to your existing #input-area styles */
-#input-area {
-    align-items: center;
-    transition: align-items 0.2s ease;
-}
-
-
 /* =============================================
    RESPONSIVE ADJUSTMENTS
    ============================================= */
@@ -349,4 +382,337 @@ body {
 
 .inline-stars span:hover {
     color: gold;
+}
+
+/* For Games */
+/* Mode buttons */
+#mode-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+#mode-buttons button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#mode-buttons button:hover {
+    background-color: #004c7c;
+    transform: translateY(-2px);
+}
+
+/* Game container */
+#content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+#game-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#game-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#close-game {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#game-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+/* Emoji Game Styles */
+.emoji-question {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.emoji-display {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.emoji-question-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.emoji-answer-form {
+    display: flex;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+.emoji-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--light-gray);
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.emoji-input:focus {
+    border-color: var(--primary-color);
+}
+
+.emoji-submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FAQ Styles */
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 15px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.faq-answer.show {
+    padding: 15px;
+    max-height: 500px;
+}
+
+.faq-toggle {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+/* Quiz Styles */
+.quiz-question {
+    margin-bottom: 30px;
+}
+
+.quiz-question-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.quiz-option {
+    padding: 12px 15px;
+    background-color: #f8f8f8;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quiz-option:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.quiz-option.selected {
+    background-color: rgba(0, 96, 156, 0.1);
+    border-color: var(--primary-color);
+}
+
+.quiz-option.correct {
+    background-color: rgba(76, 175, 80, 0.2);
+    border-color: var(--success-color);
+}
+
+.quiz-option.incorrect {
+    background-color: rgba(244, 67, 54, 0.2);
+    border-color: var(--error-color);
+}
+
+/* Next button */
+.next-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.next-button:hover {
+    background-color: #004c7c;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Progress indicator */
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.progress-dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--light-gray);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.progress-dot.active {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.progress-dot.completed {
+    background-color: var(--success-color);
+}
+
+/* Completion screen */
+.completion-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+.completion-screen h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.completion-screen p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.completion-screen .score {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--success-color);
+    margin: 20px 0;
+}
+
+.completion-screen .restart-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.completion-screen .restart-button:hover {
+    background-color: #004c7c;
+    transform: translateY(-2px);
+}
+
+/* Trophy icon */
+.trophy-icon {
+    font-size: 48px;
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+/* Celebration animation */
+@keyframes celebrate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.celebrate {
+    animation: celebrate 0.5s ease 2;
 }
