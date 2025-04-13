@@ -4,14 +4,17 @@
       "tag": "student_pass_formalities",
       "category": "student_pass",
       "patterns": [
-        "student pass formalities deadline",
-        "student pass collection",
-        "student pass completion"
+        "student pass process and formalities",
+        "student pass application",
+        "student pass appointment and timeline",
+        "student pass deadline",
+        "ICA student pass procedure",
+        "student pass document submission",
+        "student pass collection schedule",
+        "student visa"
       ],
       "responses": [
-          "📅 Arrive at least two weeks before classes for timely Student’s Pass processing with ICA. You’ll receive an email from stpformalitiessingapore@jcu.edu.au with your Student Pass Collection appointment details. <br> ⏳ Be punctual to avoid delays.",
-          "📅 To ensure timely Student’s Pass processing with ICA, arrive at least two weeks before classes. You will receive an email from stpformalitiessingapore@jcu.edu.au with your Student Pass collection details. <br> ⏳ Be on time to avoid delays.",
-          "📅 Arrive 2 weeks before classes for ICA’s timely Student’s Pass processing. Check your email from stpformalitiessingapore@jcu.edu.au for collection details. <br> ⏳ Arrive on time to prevent delays."
+        "📅 Arrive at least two weeks before classes for timely Student’s Pass processing with ICA. You’ll receive an email from stpformalitiessingapore@jcu.edu.au with your Student Pass Collection appointment details. ⏳ Be punctual to avoid delays."
         ]
     },
     {
@@ -19,13 +22,18 @@
       "category": "medical_checkup",
       "patterns": [
         "medical check-up",
-        "medical check-up location"
+        "home country medical report",
+        "Singapore medical test",
+        "medical report validity",
+        "medical requirement for Student’s Pass",
+        "medical documents submission",
+        "overseas medical check-up",
+        "health check documentation",
+        "Student’s Pass health requirement"
       ],
       "responses": [
-        "🩺 If you've already had a medical check-up in your home country, you don't need another one in Singapore.",
-        "🩺 No additional medical check-up is required in Singapore if you've completed one in your home country.",
-        "🩺 A medical check-up in Singapore is unnecessary if you've already done one in your home country."
-        ]
+        "🩺 If you've already had a medical check-up in your home country, you don't need another one in Singapore."
+       ]
     },
     {
       "tag": "welcome_speech",
@@ -33,12 +41,14 @@
       "patterns": [
         "welcome speech schedule and location",
         "welcome speech person",
-        "welcome speech dreess code"
+        "welcome speech dress code",
+        "welcome speech speaker",
+        "orientation opening remarks",
+        "guest speaker introduction",
+        "welcome speech information"
       ],
       "responses": [
-        "📅 16 January 2025, 09:00 AM - 09:05 AM, at Block C.",
-        "🎤 Speech by the Deputy Vice-Chancellor and Acting Campus Dean.",
-        "👔 Dress Code: Smart Casual (No shorts or slippers)."
+        "📌 16 Jan 2025, 09:00 AM – 09:05 AM, Block C 🎤 Welcome speech by the Deputy Vice-Chancellor. 👔 Smart casual attire required (no shorts/slippers)."
       ]
     },
     {
@@ -48,27 +58,24 @@
         "DigiLearn",
         "digiLearn workshop details",
         "requirements for DigiLearn",
-        "DigiLearn time"
+        "DigiLearn schedule",
+        "JCU online learning tools",
+        "Virtual Learning Platform"
       ],
       "responses": [
-        "📅 16 January 2025, 09:10 AM - 10:25 AM, at Block C - Learn about JCU’s virtual learning environment and collaboration spaces. <br> ✅ Bring a laptop (no tablets or mobile phones), and 🍽 lunch will be provided.",
-        "📅 16 Jan 2025, 09:10 AM - 10:25 AM, Block C - Explore JCU's virtual learning spaces. <br> ✅ Bring a laptop (no tablets or phones), and 🍽 lunch provided.",
-        "📅 16 Jan 2025, 09:10 AM - 10:25 AM, Block C - Discover JCU’s virtual learning tools. <br> ✅ Laptop required (no tablets/phones), and 🍽 lunch included."
-      ]
+        "📅 16 January 2025, 09:10 AM - 10:25 AM, at Block C - Learn about JCU’s virtual learning environment and collaboration spaces. ✅ Bring a laptop (no tablets or mobile phones), and 🍽 lunch will be provided."
+        ]
     },
     {
       "tag": "academic_advising",
       "category": "advising",
       "patterns": [
         "academic advising",
-        "academic advising schedule",
         "academic advising person",
-        "advising session details"
+        "advising session schedule and details"
       ],
       "responses": [
-        "🕰 16 Jan 2025, 10:40 AM - 11:40 AM, in breakout rooms - Meet with your course’s academic advisors for guidance.",
-        "🕰 16 Jan 2025, 10:40 AM - 11:40 AM, breakout rooms - Get guidance from your course’s academic advisors.",
-        "🕰 16 Jan 2025, 10:40 AM - 11:40 AM, breakout rooms - Consult with your course’s academic advisors for advice."
+        "🕰 16 Jan 2025, 10:40 AM - 11:40 AM, in breakout rooms - Consult with your course’s academic advisors for guidance."
       ]
     },
     {
@@ -76,31 +83,23 @@
       "category": "events",
       "patterns": [
         "orientation booths",
-        "orientation booths details",
-        "orientation booths location",
+        "orientation booths details and location",
         "orientation booths exploration"
       ],
       "responses": [
-        "📅 16 Jan 2025, 01:30 PM - 03:00 PM, Block E <br>💡Meet JCU staff and explore academic, career, and well-being resources.",
-        "📅 16 Jan 2025, 01:30 PM - 03:00 PM, Block E <br>💡Connect with JCU staff and discover academic, career, and well-being resources.",
-        "📅 16 Jan 2025, 01:30 PM - 03:00 PM, Block E <br>💡Meet JCU staff to explore academic, career, and well-being support."
+        "📅 16 Jan 2025, 01:30 PM - 03:00 PM, Block E.💡Connect with JCU staff and discover academic, career, and well-being resources."
       ]
     },
     {
       "tag": "network_with_lecturers",
       "category": "networking",
       "patterns": [
-        "networking session",
-        "network with lecturers",
+        "networking session with lecturers",
         "networking schedule",
-        "networking session location",
-        "networking session venue",
-        "networking session details"
+        "networking session venue and details"
       ],
       "responses": [
-        "🗓 16 Jan 2025, 03:00 PM - 05:00 PM, Multi-Purpose Hall <br> - Chat with lecturers and peers for academic and career advice, 🍪 afternoon tea provided.",
-        "🗓 16 Jan 2025, 03:00 PM - 05:00 PM, Multi-Purpose Hall <br> - Get academic and career insights from lecturers and peers, 🍩 afternoon tea provided.",
-        "🗓 16 Jan 2025, 03:00 PM - 05:00 PM, Multi-Purpose Hall <br> - Connect with lecturers and peers for academic and career tips, 🍰 afternoon tea included."
+        "⌚ 16 Jan 2025, 03:00 PM - 05:00 PM, Multi-Purpose Hall <br> - Connect with lecturers and peers for academic and career tips, ☕🍰 afternoon tea included."
       ]
     },
     {
@@ -108,14 +107,10 @@
       "category": "events",
       "patterns": [
         "campus exploration details",
-        "campus exploration",
-        "campus tour details",
-        "campus tour"
+        "campus tour details"
       ],
       "responses": [
-        "📍14 Jan 2025, 02:00 PM - 05:30 PM, JCU The Shoppes Marina Bay Sands <br> Explore the campus, 🎉 join fun activities, and meet new students. <br> 📌 Register by 3rd Jan 2025.",
-        "📍14 Jan 2025, 02:00 PM - 05:30 PM, JCU The Shoppes Marina Bay Sands <br> - Discover the campus, 🎉 enjoy activities, and connect with new students. <br> 📌 Register by 3rd Jan 2025.",
-        "📍14 Jan 2025, 02:00 PM - 05:30 PM, JCU The Shoppes Marina Bay Sands <br> - Explore campus, 🎉 take part in activities, and meet peers. <br> 📌 Register by 3rd Jan 2025."
+        "📍14 Jan 2025, 02:00 PM - 05:30 PM, JCU The Shoppes Marina Bay Sands - Discover the campus, 🎉 enjoy activities, and connect with new students. 📌 Register by 3rd Jan 2025."
       ]
     },
     {
@@ -123,10 +118,8 @@
       "category": "general",
       "patterns": [],
       "responses": [
-        "😕 I'm sorry, I didn't understand that. <br> Please check the [Orientation Guide](https://www.jcu.edu.sg/courses-and-study/orientation/during-orientation) or ask a staff member for help.",
-        "🔎 I didn’t quite catch that. <br> You can refer to the [Orientation Guide](https://www.jcu.edu.sg/courses-and-study/orientation/during-orientation) or ask a staff member for assistance.",
-        "❓ Oops, I didn’t get that. <br> Please visit the [Orientation Guide](https://www.jcu.edu.sg/courses-and-study/orientation/during-orientation) or reach out to a staff member for help."
-      ]
+        "🔎 I didn’t quite catch that. You can refer to the [Orientation Guide](https://www.jcu.edu.sg/courses-and-study/orientation/during-orientation) or ask a staff member for assistance."
+        ]
     }
   ]
 }
