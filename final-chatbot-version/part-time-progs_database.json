@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {
+      "tag": "welcome_event",
+      "patterns": [
+        "Welcome Speech and Academic Briefing",
+        "better prepare",
+        "prepare"
+      ],
+      "responses": [
+        "Welcome Speech and Academic Briefing<br>Date: 16 January 2025<br>Vanue: Block<br>C7:00PM-8:30PM<br>Course:<br>  - Part-Time Diploma of Higher Education (Psychological Science)<br>  - Part-Time Bachelor of Psychological Science<br>  - Part-Time Master of Guidance and Counselling<br>  - Part-Time Business Programs "
+      ]
+    },
+    {
+      "tag": "welcome_speech",
+      "patterns": [
+        "welcome event timing",
+        "welcome speech",
+        "speech",
+        "opening ceremony schedule",
+        "welcome speeches details",
+        "orientation keynote speakers"
+      ],
+      "responses": [
+        "Welcome Speech (16 Jan 2025)<br>Block C<br>Schedule:<br>7:00PM: Welcome by Deputy VC<br>7:10PM: Welcome by Acting Campus Dean<br>7:20PM: JCU 101 Introduction<br>7:25PM: Breakout sessions begin"
+      ]
+    },
+    {
+      "tag": "academic_briefing",
+      "patterns": [
+        "academic advising sessions",
+        "course briefings timing",
+        "breakout room activities",
+        "program orientation details"
+      ],
+      "responses": [
+        "Academic Briefing Sessions<br>7:25PM-8:30PM | Block C<br>Parallel Sessions:<br>- Counselling (Assoc. Professor)<br>- Social & Health Sciences (Academic Head)<br>- Business Programs (Academic Head)"
+      ]
+    },
+    {
+      "tag": "part_time_course_list",
+      "patterns": [
+        "available part-time programs",
+        "evening study options",
+        "part-time degrees offered"
+      ],
+      "responses": [
+        "Part-Time Programs Offered:<br>- Diploma of Higher Education (Psychological Science)<br>- Bachelor of Psychological Science<br>- Master of Guidance & Counselling<br>- Business Programs (Various)"
+      ]
+    }
+  ]
+}

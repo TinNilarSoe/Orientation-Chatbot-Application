@@ -1,0 +1,572 @@
+{
+  "intents": [
+    {
+      "tag": "academic_planning",
+      "patterns": [
+        "academic planning",
+        "clashes of subjects",
+        "tutorial clashes",
+        "clashes",
+        "clash"
+      ],
+      "responses": [
+        "Academic Planning Support<br>Contact for any issues with subject/tutorial clashes:<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: pd-singapore@jcu.edu.au<br>- Phone:<br>  • Business (UG), IT, Science: Ms Aisyah (+65 6709 3667)<br>  • Business (PG), Psychology, Education: Ms Yati (+65 6709 3665)"
+      ]
+    },
+    {
+      "tag": "accommodation",
+      "patterns": [
+        "accommodation",
+        "assistance with accommodation",
+        "help with an accommodation",
+        "accommodation service"
+      ],
+      "responses": [
+        "Accommodation<br>JCU Singapore's accommodation service assists students with short-term or long-term housing needs:<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: accommodation-singapore@jcu.edu.au <br>- Phone: +65 9238 9735<br>- Location: Block C, C1-09"
+      ]
+    },
+    {
+      "tag": "attendance_monitoring_office",
+      "patterns": [
+        "attendance monitoring office",
+        "attendance insurance",
+        "deferment",
+        "LOA issues",
+        "withdrawal"
+      ],
+      "responses": [
+        "Attendance Monitoring Office<br>For Attendance, Insurance, Deferment, Withdrawal, Leave of Absence (LOA) issues, please contact us:<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: attendance-singapore@jcu.edu.au <br>- Phone: +65 6709 3662 or +65 8139 7157<br>- Location: Block C, C1-12A"
+      ]
+    },
+    {
+      "tag": "counselling-wellbeing_office",
+      "patterns": [
+        "mental",
+        "counselling",
+        "wellbeing",
+        "student’s mental wellbeing",
+        "LOA issues",
+        "counselling services",
+        "supportive environment"
+      ],
+      "responses": [
+        "Counselling & Wellbeing Office<br>Our free, confidential counselling services support your mental wellbeing. We offer one-on-one sessions and workshops to help with student challenges. Reach out anytime!:D <br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: studentcounselling-singapore@jcu.edu.au <br>- Phone: +65 6709 3671 <br>- Location: Block D, D1-14"
+      ]
+    },
+    {
+      "tag": "enrolments_office",
+      "patterns": [
+        "enrolment",
+        "about subject enrolments",
+        "course",
+        "course transfer",
+        "change of major/minor"
+      ],
+      "responses": [
+        "Enrolment Office<br>For enquiries about enrolments, transfers, or major/minor changes, please email us:<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: enrolments-singapore@jcu.edu.au<br>- Location: Block A, Corporate Reception"
+      ]
+    },
+    {
+      "tag": "examinations-graduation_office",
+      "patterns": [
+        "examinations",
+        "graduation",
+        "issues on examinations or graduation",
+        "exams",
+        "exam"
+      ],
+      "responses": [
+        "Examinations & Graduation Office<br>Should you have queries or issues on examinations or graduation, please email the following respectively <br>- Hours: Mon-Fri, 9AM-6PM<br>- Email Address for exams: exams-singapore@jcu.edu.au<br>- Email Address for graduations: graduation-singapore@jcu.edu.au<br>- Location: Block C, C4-16A"
+      ]
+    },
+    {
+      "tag": "finance_department",
+      "patterns": [
+        "finance",
+        "payments",
+        "bank details",
+        "payment modes",
+        "transaction",
+        "payment advice",
+        "finance team"
+      ],
+      "responses": [
+        "Finance Department<br>Use the bank details and payment methods from the Student Handbook (JCU website). Include your student ID in transactions. Invoices/payment advice will be emailed by Finance<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: finance-singapore@jcu.edu.au"
+      ]
+    },
+    {
+      "tag": "interest_groups-communities",
+      "patterns": [
+        "interest groups",
+        "communities",
+        "connect with people",
+        "clubs",
+        "community",
+        "activities",
+        "community activities"
+      ],
+      "responses": [
+        "Interest Groups and Communities<br>JCU Singapore offers many student Interest Groups and Communities. They're great for networking, relaxation from studies, and developing career skills<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: campusactivities-singapore@jcu.edu.au<br>- Phone: +65 6709 3676<br>- Location: Block C, C1-09"
+      ]
+    },
+    {
+      "tag": "IT-on-campus",
+      "patterns": [
+        "IT Help Desk",
+        "ICT Services",
+        "IT enquiries",
+        "access issues",
+        "technical",
+        "digital resources",
+        "software",
+        "Microsoft Office",
+        "access"
+      ],
+      "responses": [
+        "IT on Campus<br>JCU Singapore offers many student Interest Groups and Communities. They're great for networking, relaxation from studies, and developing career skills<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: ithelpdesk-singapore@jcu.edu.au<br>- Location: Block C, C1-08"
+      ]
+    },
+    {
+      "tag": "learning_centre",
+      "patterns": [
+        "IT Help Desk",
+        "ICT Services",
+        "IT enquiries",
+        "access issues",
+        "technical",
+        "software",
+        "Microsoft Office",
+        "access"
+      ],
+      "responses": [
+        "IT on Campus<br>JCU Singapore offers many student Interest Groups and Communities. They're great for networking, relaxation from studies, and developing career skills<br>- Hours: Mon-Fri, 9AM-6PM<br>- Email: ithelpdesk-singapore@jcu.edu.au<br>- Location: Block C, C1-08"
+      ]
+    },
+    {
+      "tag": "library_services",
+      "patterns": [
+        "library",
+        "borrow book",
+        "professional and engaging library",
+        "book materials",
+        "reading resources",
+        "reading list",
+        "resources",
+        "libchat",
+        "library working hours",
+        "library resources",
+        "books"
+      ],
+      "responses": [
+        "Library Services<br>JCU Singapore Library supports students with resources, services, and expert assistance during operating hours. Librarians are available on-site or via LibChat when JCU Australia is open<br>- Hours: Mon-Fri (9AM-6PM), Sat (9AM-1PM)<br>- Email: library-singapore@jcu.edu.au<br>- Phone: +65 6709 3799<br>- Location: Block C, C1-08"
+      ]
+    },
+    {
+      "tag": "psychology_clinic",
+      "patterns": [
+        "psychology clinic",
+        "clinic",
+        "psychology",
+        "therapy",
+        "mental health",
+        "mental help",
+        "psychology support"
+      ],
+      "responses": [
+        "Psychology Clinic<br>The JCU Singapore Psychology Clinic provides confidential therapy ($25/hour)and assessments($300, all-inclusive) for students and public, including children, adolescents, adults, and families. Income-based discounts/waivers available<br>- Hours: Mon-Fri (9AM-5:30PM)<br>- Email: psyclinic-singapore@jcu.edu.au<br>- Phone: +65 6709 3762<br>- Location: Block B, B1-03"
+      ]
+    },
+    {
+      "tag": "student_affairs",
+      "patterns": [
+        "course fees",
+        "student affairs",
+        "scholarship",
+        "timetable"
+      ],
+      "responses": [
+        "Student Affairs<br>Your first point of contact for general enquiries such as Enrolment, Course Fees, Scholarship, Timetable, Attendance, etc.<br>- Hours: Mon-Fri (9AM-6PM), Sat (9AM-1PM)<br>- Email: studentaffairs-singapore@jcu.edu.au<br>- Location: Block C, Student Hub"
+      ]
+    },
+    {
+      "tag": "student_careers_office",
+      "patterns": [
+        "student careers",
+        "career",
+        "career preparation",
+        "counselling",
+        "employability",
+        "advisory",
+        "career advice",
+        "career office",
+        "job search",
+        "resume",
+        "internship",
+        "workshop"
+      ],
+      "responses": [
+        "Student Careers Office<br>The Student Careers Office helps boost employability through internships, workshops, and personalized support—including career counseling, job search strategies, and resume reviews—to prepare students for their dream jobs<br>- Hours: Mon-Fri (9AM-6PM)<br>- Email: careers-singapore@jcu.edu.au<br>- Phone:+65 6709 3853 or +65 6709 3855<br>- Location: Block C, Student Hub"
+      ]
+    },
+    {
+      "tag": "student_feedback",
+      "patterns": [
+        "compliment",
+        "informal feedback",
+        "non-academic support",
+        "student feedback",
+        "feedback",
+        "suggestions"
+      ],
+      "responses": [
+        "Student Feedback<br>Share feedback or suggestions through our student portal to help improve non-academic support services.<br>- Hours: Mon-Fri (8:30AM-6PM)<br>- Phone:+65 6709 3824<br>- Location: Block C, Student Hub"
+      ]
+    },
+    {
+      "tag": "orientation_purpose",
+      "patterns": [
+        "orientation purpose",
+        "orientation events",
+        "orientation week",
+        "orientation start",
+        "beginning"
+      ],
+      "responses": [
+        "Orientation week will take place from 6th to 17th January 2025. JCU Orientation helps you:<br> - Discover campus<br> - Connect with peers<br> - Discover support services<br> - Meet new friends"
+      ]
+    },
+    {
+      "tag": "part-vs-full_time",
+      "patterns": [
+        "difference between the part-time and full-time",
+        "part-time vs full-time",
+        "part time and full time",
+        "study types",
+        "explain full-time and part-time",
+        "variety",
+        "full-time or part-time",
+        "compare part-time and full-time",
+        "pros and cons of part-time study",
+        "difference in schedules"
+      ],
+      "responses": [
+        "Part-time schedules are designed for specific programs (e.g., Part-Time Diploma, Bachelor, and Master courses in fields like Psychological Science and Business).<br>Full-time schedules cover a wider range, including Business, Social Health, Sciences, Technology, Foundation Programs, and Study Abroad."
+      ]
+    },
+    {
+      "tag": "jcu-101",
+      "patterns": [
+        "jcu 101",
+        "guidance",
+        "pre-recorded videos",
+        "introduction",
+        "videos"
+      ],
+      "responses": [
+        "JCU 101 is an introduction session that walks students through the essentials of studying at JCU, including academic expectations, student support, and campus life."
+      ]
+    },
+    {
+      "tag": "maps_location",
+      "patterns": [
+        "JCU",
+        "map",
+        "location",
+        "place",
+        "address of James Cook University",
+        "directions to JCU",
+        "address"
+      ],
+      "responses": [
+        "James Cook University Singapore is located at 149 Sims Drive, Singapore 387380. <br>You can find it on Google Maps : https://goo.gl/maps/5HVrYhdd5qJ2"
+      ]
+    },
+    {
+      "tag": "digilearn",
+      "patterns": [
+        "DigiLearn",
+        "virtual learning environment",
+        "online collaboration spaces"
+      ],
+      "responses": [
+        "DigiLearn is James Cook University's virtual learning environment."
+      ]
+    },
+    {
+      "tag": "digilearn-workshops",
+      "patterns": [
+        "digilearn workshop",
+        "JCU GetStarted",
+        "before digilearn",
+        ""
+      ],
+      "responses": [
+        "You must complete JCU GetStarted before attending the DigiLearn Workshops.<br>- Make sure to use a laptop or personal computer for DigiLearn workshops.<br>- Mobile phones and iPads are not recommended."
+      ]
+    },
+    {
+      "tag": "pre-orientation",
+      "patterns": [
+        "before orientation",
+        "checklist",
+        "documents before",
+        "pre-orientation",
+        "setup before",
+        "student pass requirements",
+        "prepare before",
+        "before orientation week"
+      ],
+      "responses": [
+        "Pre-Orientation Essentials<br>1. Sign all admission documents (Offer Letter, Student Contract)<br>2. Complete Student Pass formalities (if international)<br>3. Attend Reporting + Document Verification sessions<br>4. Set up JCU accounts (GetStarted, Student Email)<br>5. Collect Student ID Card<br>6. Download academic calendars + payment deadlines"
+      ]
+    },
+    {
+      "tag": "password_setup",
+      "patterns": [
+        "JCU password",
+        "set password",
+        "password",
+        "setup",
+        "password on JCU GetStarted"
+      ],
+      "responses": [
+        "Set up your password on JCU GetStarted with your 8-digit Student ID. <br>You can find your Student ID on the top right-hand corner of Offer Letter.<br>Contact the Admissions Office for assistance."
+      ]
+    },
+    {
+      "tag": "student_email",
+      "patterns": [
+        "email",
+        "student email",
+        "communication",
+        "letter",
+        "official communication channel"
+      ],
+      "responses": [
+        "Log into your JCU Student Email account regularly. This is your official communication channel with any staff from JCU. Make sure to check it for important updates."
+      ]
+    },
+    {
+      "tag": "calendar",
+      "patterns": [
+        "JCU calendar",
+        "dates",
+        "important dates",
+        "academic calendar"
+      ],
+      "responses": [
+        "Download the JCU Calendars to view important dates. You can either print them out or note them down in your diary to stay on top of key deadlines."
+      ]
+    },
+    {
+      "tag": "orientation_week_tasks",
+      "patterns": [
+        "orientation week checklist",
+        "activities during orientation",
+        "setting up university systems",
+        "orientation workshops",
+        "fee payment deadline",
+        "during orientation"
+      ],
+      "responses": [
+        "Orientation Week Guide<br>- Attend Welcome Sessions + JCU 101<br>- Activate LearnJCU + eStudent accounts<br>- Configure Office 365 + eduroam WiFi<br>- Make first fee payment (international students)<br>- Register for AccessAbility if needed<br>- Explore library/IT services + transportation options"
+      ]
+    },
+    {
+      "tag": "learnjcu",
+      "patterns": [
+        "log into LearnJCU",
+        "LearnJCU",
+        "subject information",
+        "materials",
+        "slides",
+        "course information"
+      ],
+      "responses": [
+        "Log into LearnJCU to find information related to your subjects. You will find:<br>- textbooks,<br>- assessment topics,<br>- deadlines,<br>- grading information provided by your lecturers."
+      ]
+    },
+    {
+      "tag": "first_payment_installment",
+      "patterns": [
+        "first installment payment",
+        "first payment due",
+        "",
+        "fees during orientation"
+      ],
+      "responses": [
+        "Make your first installment of course fees and International Student Registration fees (if applicable) as per the payment advice in the Student Contract.<br>* If you require an extension, submit the Request for Student Finance form."
+      ]
+    },
+    {
+      "tag": "accessability_services",
+      "patterns": [
+        "AccessAbility Services",
+        "disabilities",
+        "injury",
+        "impact on studies",
+        "help",
+        "support",
+        "health conditions"
+      ],
+      "responses": [
+        "Register for AccessAbility Services if you have a disability, health condition, or injury that might impact your studies. This service can provide the support and accommodations you need."
+      ]
+    },
+    {
+      "tag": "academic_week1",
+      "patterns": [
+        "first week",
+        "starting academic work",
+        "subject outlines access",
+        "class timetable check",
+        "lecturer consultation hours"
+      ],
+      "responses": [
+        "Week 1 Priorities<br>1. Review all Subject Outlines in LearnJCU<br>2. Confirm timetable via eStudent<br>3. Note assessment deadlines + grading criteria<br>4. Collect Student ID if pending<br>5. Attend Learning Center orientation<br>6. Setup regular email checking routine"
+      ]
+    },
+    {
+      "tag": "academic_week2",
+      "patterns": [
+        "second week assignments",
+        "using library resources",
+        "student groups information",
+        "academic writing help",
+        "research skills"
+      ],
+      "responses": [
+        "Week 2 Focus Areas<br>- Start assignments using InfoSkills Toolkit<br>- Connect with assigned Student Ambassador<br>- Explore JCU Interest Groups/Clubs<br>- Bookmark Current Students portal<br>- Attend DigiLearn workshops<br>- Verify transportation arrangements"
+      ]
+    },
+    {
+      "tag": "academic_week3",
+      "patterns": [
+        "census date information",
+        "deadline",
+        "dropping subjects deadline",
+        "withdrawal process",
+        "academic penalty dates",
+        "fee liability deadline"
+      ],
+      "responses": [
+        "Critical Week 3 Deadline<br>Census Date next week - Last chance to:<br>1. Withdraw without financial liability<br>2. Drop subjects without academic penalty<br>3. Change enrollment status<br>Contact Enrolments Office for assistance"
+      ]
+    },
+    {
+      "tag": "services_overview",
+      "patterns": [
+        "services",
+        "student services",
+        "learning support",
+        "services overview",
+        "support services"
+      ],
+      "responses": [
+        "Familiarize yourself with various student services at JCU, including: <br>- AccessAbility Services <br>- Accommodation <br>- Careers Services <br>- Counselling <br>- Student Affairs <br>- JCU Student Council <br>- Learning Advisors <br>- Library Services <br>- ICT Team"
+      ]
+    },
+    {
+      "tag": "transportation_options",
+      "patterns": [
+        "get to JCU",
+        "transportation options",
+        "bus",
+        "MRT",
+        "transport",
+        "public transport",
+        "transport costs"
+      ],
+      "responses": [
+        "Explore the various transportation options to and from JCU Singapore, including public transport. You can also benefit from transport concessions if you use public transport regularly."
+      ]
+    },
+    {
+      "tag": "subject_outlines",
+      "patterns": [
+        "subject outline",
+        "course",
+        "course information",
+        "lecturer's contact details"
+      ],
+      "responses": [
+        "Subject Outlines are available on LearnJCU. They provide crucial information about your course, such as the lecturer's contact details, consultation hours, academic expectations, and assessment guidelines."
+      ]
+    },
+    {
+      "tag": "international_student",
+      "patterns": [
+        "student pass renewal",
+        "visa compliance",
+        "international fee payment",
+        "attendance requirements",
+        "foreign student rules"
+      ],
+      "responses": [
+        "International Students Must:<br>1. Maintain 90% attendance for Student Pass<br>2. Report address changes within 14 days<br>3. Renew Student Pass 1 month before expiry<br>4. Keep insurance coverage valid<br>5. Pay fees by deadlines<br>Contact Admissions for visa queries"
+      ]
+    },
+    {
+      "tag": "learning_center",
+      "patterns": [
+        "Learning Centre",
+        "online resources",
+        "free short courses",
+        "workshops",
+        "resources to improve  academic skills"
+      ],
+      "responses": [
+        "Visit the Learning Centre to access online resources, free short courses, and workshops aimed at improving your writing, referencing, time management, and learning techniques."
+      ]
+    },
+    {
+      "tag": "estudent",
+      "patterns": [
+        "eStudent",
+        "schedule on eStudent",
+        "graduation details",
+        "grades",
+        "enrolment information"
+      ],
+      "responses": [
+        "Log into eStudent to view your enrolment details, check your class schedule, and track your academic progress. It's your portal for all things related to your enrollment and results."
+      ]
+    },
+    {
+      "tag": "finance_extension",
+      "patterns": [
+        "pay fees",
+        "extension for payment",
+        "pay",
+        "fee",
+        "extension"
+      ],
+      "responses": [
+        "If you require an extension for paying your course fees or other fees, you can submit a 'Request for Student Finance' form to seek assistance or contact the Student Finance office."
+      ]
+    },
+    {
+      "tag": "census_date",
+      "patterns": [
+        "census",
+        "Census Date",
+        "enrolment deadline"
+      ],
+      "responses": [
+        "The Census Date is an important deadline that typically falls in the third week of your studies. If you wish to withdraw from a subject or courses, you must do so before this date to avoid incurring fees or academic penalties."
+      ]
+    },
+    {
+      "tag": "id_card",
+      "patterns": [
+        "student ID card",
+        "ID card",
+        "Verification of Document",
+        "ID"
+      ],
+      "responses": [
+        "You can collect your JCUS Student ID card during the Verification of Document (Individual) session or as part of your orientation week activities."
+      ]
+    }
+  ]
+}
