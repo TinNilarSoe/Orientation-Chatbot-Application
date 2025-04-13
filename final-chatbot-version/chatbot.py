@@ -205,7 +205,7 @@ def index():
 @app.route('/quiz', methods=['GET'])
 def get_quiz():
     # Load the quiz data from the JSON file
-    with open(os.path.join('static', 'data', 'quiz.json')) as f:
+    with open(os.path.join('static', 'data', 'quiz.json'), 'r', encoding='utf-8') as f:
         quiz_data = json.load(f)
     return jsonify(quiz_data)
 
@@ -213,9 +213,10 @@ def get_quiz():
 # Route for Emoji Game
 @app.route('/emoji-game', methods=['GET'])
 def get_emoji_game():
-    # Load the emoji game data from the JSON file
-    with open(os.path.join('static', 'data', 'emoji_game.json')) as f:
+    # Load the emoji game data from the JSON file with the correct encoding
+    with open(os.path.join('static', 'data', 'emoji_game.json'), 'r', encoding='utf-8') as f:
         emoji_game_data = json.load(f)
+    # Return the emoji game data as JSON
     return jsonify(emoji_game_data)
 
 
@@ -223,7 +224,7 @@ def get_emoji_game():
 @app.route('/faq', methods=['GET'])
 def get_faq():
     # Load the FAQ data from the JSON file
-    with open(os.path.join('static', 'data', 'faq.json')) as f:
+    with open(os.path.join('static', 'data', 'faq.json'), 'r', encoding='utf-8') as f:
         faq_data = json.load(f)
     return jsonify(faq_data)
 
