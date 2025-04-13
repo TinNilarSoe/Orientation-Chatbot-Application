@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is the main campus of JCU Singapore located?",
+    "options": ["Ang Mo Kio", "Clementi", "Sims Drive", "Orchard Road"],
+    "answer": "Sims Drive"
+  },
+  {
+    "question": "Which tool do JCU students commonly use to check their timetable?",
+    "options": ["Canvas", "JCU App", "StudentFirst", "Zoom"],
+    "answer": "StudentFirst"
+  },
+  {
+    "question": "What is the full name of JCU?",
+    "options": ["James Cook University", "Johnston College University", "Jakarta City University", "Japanese Cultural University"],
+    "answer": "James Cook University"
+  },
+  {
+    "question": "Which learning platform is used for course materials at JCU?",
+    "options": ["Canvas", "Moodle", "Blackboard", "Google Classroom"],
+    "answer": "Blackboard"
+  },
+  {
+    "question": "What is the purpose of a student ID card?",
+    "options": ["To open bank accounts", "To access campus facilities", "To enter staff only rooms", "To enter exam halls"],
+    "answer": "To enter exam halls"
+  }
+]
