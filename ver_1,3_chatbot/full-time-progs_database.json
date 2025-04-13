@@ -1,0 +1,101 @@
+{
+  "intents": [
+    {
+      "tag": "medical_checkup_student_pass",
+      "patterns": [
+        "What do I need for the medical check-up?",
+        "When should I complete my Student’s Pass formalities?",
+        "Do I need to undergo a medical check-up in Singapore?"
+      ],
+      "responses": [
+        "Students are encouraged to arrive at least two weeks before classes begin to ensure all formalities for your Student’s Pass are completed. If you’ve already completed the medical check-up in your home country, you do not need to repeat it in Singapore. Please email your report to stpformalitiessingapore@jcu.edu.au.",
+        "Ensure punctuality for your appointments to avoid delays in your Student’s Pass processing"
+      ]
+    },
+    {
+      "tag": "welcome_speech",
+      "patterns": [
+        "When is the welcome speech?",
+        "What time is the welcome speech?",
+        "Who will give the welcome speech?"
+      ],
+      "responses": [
+        "The Welcome Speech will be on 16 January 2025 from 09:00 AM to 09:05 AM at Block C. The speech will be given by the Deputy Vice-Chancellor, Singapore, and the Acting Campus Dean & Head of Learning, Teaching, and Student Engagement.",
+        "Dress Code: Smart Casual (no shorts or slippers allowed)."
+      ]
+    },
+    {
+      "tag": "digi_learn_workshop",
+      "patterns": [
+        "What is the DigiLearn workshop?",
+        "When is the DigiLearn workshop?",
+        "Do I need to bring anything for DigiLearn?"
+      ],
+      "responses": [
+        "The DigiLearn workshop is on 16 January 2025 from 09:10 AM to 10:25 AM at Block C. It will help you get started with the virtual learning environment and online collaboration spaces at JCU.",
+        "Please complete your JCU GetStarted before attending the workshop. It is essential to use a laptop or personal computer (no tablets or mobile phones). Lunch will be provided."
+      ]
+    },
+    {
+      "tag": "academic_advising",
+      "patterns": [
+        "When is the academic advising?",
+        "What time is the academic advising?",
+        "Who will conduct the academic advising?"
+      ],
+      "responses": [
+        "Academic Advising will take place on 16 January 2025 from 10:40 AM to 11:40 AM in breakout rooms.",
+        "Academic advising is divided by your course, and you will meet with the relevant academic advisors."
+      ]
+    },
+    {
+      "tag": "explore_booths",
+      "patterns": [
+        "When can I visit the booth?",
+        "explore booth",
+        "Where can I visit the orientation booths?",
+        "What can I do at the orientation booths?"
+      ],
+      "responses": [
+        "The booths will be open on 16 January 2025 from 01:30 PM to 03:00 PM at Block E.",
+        "You can meet JCU staff from various departments and learn about the support and opportunities offered, including academic support, career development, student well-being, and life on campus."
+      ]
+    },
+    {
+      "tag": "network_with_lecturers",
+      "patterns": [
+        "When is the network with lecturers session?",
+        "Where can I network with my lecturers?",
+        "What can I expect from the networking session?"
+      ],
+      "responses": [
+        "The session will be on 16 January 2025 from 03:00 PM to 05:00 PM at the Multi-Purpose Hall.",
+        "You will have the opportunity to interact with your lecturers and peers, build connections, and gain valuable academic insights and career advice. Afternoon tea will be provided."
+      ]
+    },
+    {
+      "tag": "students_pass_formalities",
+      "patterns": [
+        "What is the procedure for completing my Student’s Pass?",
+        "When do I need to complete my Student’s Pass formalities?",
+        "Do I need to be in Singapore to complete the formalities?"
+      ],
+      "responses": [
+        "You should complete your Student’s Pass formalities as soon as you arrive in Singapore, ideally two weeks before your course starts. If you arrive later, you may face delays in attending classes.",
+        "The formalities will be done at the campus, and you will receive an email from STP Formalities with your appointment details."
+      ]
+    },
+    {
+      "tag": "campus_exploration",
+      "patterns": [
+        "When is the campus exploration activity?",
+        "Where is the campus exploration?",
+        "Can I join the campus exploration?"
+      ],
+      "responses": [
+        "Campus Exploration will be held on 14 January 2025 from 02:00 PM to 03:00 PM and 03:00 PM to 05:30 PM at James Cook University The Shoppes Marina Bay Sands.",
+        "You can explore the campus, participate in fun activities, and engage with new students. Make sure to register by 3rd January 2025."
+      ]
+    }
+  ]
+}
